@@ -71,14 +71,14 @@ return [
                 ],
             ],
         ],
-        /*
+
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
             ],
         ],
-        */
+        
     ],
     'as access' => [
         'class' => 'izyue\admin\components\AccessControl',
