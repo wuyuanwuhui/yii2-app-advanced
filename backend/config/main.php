@@ -16,8 +16,15 @@ return [
         'admin' => [
             'class' => 'izyue\admin\Module',
 //            'layout' => 'left-menu',
-            'layout' => '@app/views/layouts/main.php',
-        ]
+//            'layout' => '@app/views/layouts/main.php',
+        ],
+
+        'sys' => [
+            'class' => 'backend\modules\sys\Module',
+            //'layout' => 'left-menu',
+            //'layout' => '@app/views/layouts/main.php',
+        ],
+
     ],
     'components' => [
         'user' => [
@@ -30,6 +37,7 @@ return [
                 [
                     'class' => 'yii\log\FileTarget',
                     'levels' => ['error', 'warning'],
+                    'logVars' => ['*'],
                 ],
             ],
         ],
@@ -78,14 +86,14 @@ return [
             'rules' => [
             ],
         ],
-        
     ],
     'as access' => [
         'class' => 'izyue\admin\components\AccessControl',
         'allowActions' => [
             'debug/*',
             'site/*',
-//            'admin/*',
+            'gii/*',
+            'sys/*',
             // The actions listed here will be allowed to everyone including guests.
             // So, 'admin/*' should not appear here in the production, of course.
             // But in the earlier stages of your development, you may probably want to

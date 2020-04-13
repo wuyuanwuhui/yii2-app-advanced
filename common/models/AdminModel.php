@@ -27,6 +27,7 @@ class AdminModel extends BaseModel implements IdentityInterface
     const STATUS_ACTIVE = 10;
 
     public $password;
+    public $access_token;
 
     /**
      * @inheritdoc
@@ -104,7 +105,34 @@ class AdminModel extends BaseModel implements IdentityInterface
      */
     public static function findIdentityByAccessToken($token, $type = null)
     {
-        throw new NotSupportedException('"findIdentityByAccessToken" is not implemented.');
+        // throw new NotSupportedException('"findIdentityByAccessToken" is not implemented.');
+        return static::findOne(['access_token' => $token]);
+    }
+
+    /**
+     * 生成access_token
+     * @throws \yii\base\Exception
+     */
+    public function generateAccessToken()
+    {
+        // $this->access_token = Yii::$app->security->generateRandomString();
+        $this->access_token = Yii::$app->security->generateRandomString() . '-' . time();
+    }
+
+    /**
+     * 验证token是否过期
+     * Validates if accessToken expired
+     * @param null $token
+     * @return bool
+     */
+    public static function validateAccessToken($token = null) {
+        if ($token === null) {
+            return false;
+        } else {
+            $timestamp = (int) substr($token, strrpos($token, '-') + 1); // 适当的加密
+            $expire = Yii::$app->params['user.accessTokenExpire'];
+            return $timestamp + $expire >= time();
+        }
     }
 
     /**
