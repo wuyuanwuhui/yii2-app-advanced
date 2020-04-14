@@ -99,7 +99,10 @@ class Module extends \yii\base\Module
         if ($this->navbar === null) {
             $this->navbar = [
                 ['label' => Yii::t('rbac-admin', 'Help'), 'url' => 'https://github.com/liuilpeng/yii2-admin/blob/master/docs/guide/basic-usage.md'],
-                ['label' => Yii::t('rbac-admin', 'Application'), 'url' => Yii::$app->homeUrl]
+                [
+                    'label' => Yii::t('rbac-admin', 'Application'),
+                    'url' => Yii::$app->homeUrl ?? ''
+                ]
             ];
         }
         if (class_exists('yii\jui\JuiAsset')) {

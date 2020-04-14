@@ -11,12 +11,20 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'console\controllers',
+
+    'modules' => [
+        'sys' => [
+            'class' => 'backend\modules\sys\Module',
+        ],
+    ],
+
     'components' => [
         'log' => [
             'targets' => [
                 [
                     'class' => 'yii\log\FileTarget',
-                    'levels' => ['error', 'warning'],
+                    'levels' => ['error', 'warning', 'trace',],
+                    'logVars' => ['*'],
                 ],
             ],
         ],

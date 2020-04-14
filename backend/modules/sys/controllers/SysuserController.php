@@ -32,8 +32,8 @@ class SysuserController extends Controller
     {
         parent::init();
         if ($this->userClassName === null) {
-            $this->userClassName = Yii::$app->getUser()->identityClass;
-            $this->userClassName = $this->userClassName ? : 'common\models\User';
+            // $this->userClassName = Yii::$app->user->identityClass;
+            $this->userClassName = $this->userClassName ? : 'common\models\AdminModel';
         }
     }
 
@@ -80,6 +80,7 @@ class SysuserController extends Controller
 
     /**
      * 查看用户
+     *
      * @param $id
      * @return string
      * @throws NotFoundHttpException
@@ -99,6 +100,7 @@ class SysuserController extends Controller
 
     /**
      * 分配权限
+     *
      * Assign or revoke assignment to user
      * @param  integer $id
      * @param  string  $action
@@ -169,6 +171,7 @@ class SysuserController extends Controller
 
     /**
      * 搜索用户
+     *
      * Search roles of user
      * @param  integer $id
      * @param  string  $target
@@ -221,6 +224,7 @@ class SysuserController extends Controller
 
     /**
      * 新增用户
+     *
      * Creates a new Menu model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
@@ -244,6 +248,7 @@ class SysuserController extends Controller
 
     /**
      * 修改用户
+     *
      * Updates an existing Menu model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param  integer $id

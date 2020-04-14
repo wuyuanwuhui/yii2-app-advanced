@@ -23,6 +23,11 @@ return [
             'class' => 'backend\modules\sys\Module',
             //'layout' => 'left-menu',
             //'layout' => '@app/views/layouts/main.php',
+            'modules' => [
+                'sub1' => [
+                    'class' => 'backend\modules\sys\modules\sub1\Module',
+                ],
+            ],
         ],
 
     ],
