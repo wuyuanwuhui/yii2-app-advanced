@@ -30,9 +30,15 @@ class Helper
      */
     public static function getComment($object, $key = 'description')
     {
-        $comment = $object->getDocComment();
-        $comment = Helper::DocParser($comment);
-        return ($comment[$key]) ?? ($comment['long_description'] ?? '');
+        $docComment = Helper::DocParser($object->getDocComment());
+        $comment = $docComment[$key] ?? ($docComment['long_description'] ?? '');
+
+        if (strlen($comment) > 64) {
+            echo 'Name should contain at most 64 characters';
+            var_dump($object);
+            exit;
+        }
+        return $comment;
     }
 
     /**

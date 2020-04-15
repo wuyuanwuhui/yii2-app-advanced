@@ -32,7 +32,7 @@ class FileHelpers extends FileHelper
     }
 
     /**
-     * 扫描文件夹递归获取 controller 文件
+     * 扫描文件夹递归获取 controller 文件: use FileHelpers::findFiles instead
      * @param $dir
      * @param string extension
      * @return array

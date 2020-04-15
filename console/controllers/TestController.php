@@ -8,7 +8,7 @@ use yii\helpers\VarDumper;
 use yii\db\Migration;
 use yii\console\ExitCode;
 
-class AutoController extends \yii\console\Controller
+class TestController extends \yii\console\Controller
 {
 
     public $color = false;
@@ -138,6 +138,80 @@ class AutoController extends \yii\console\Controller
 
         // ok
 
+    }
+
+    // ---------------------------------------------------------------------------------------------------------------
+
+    public function actionTest()
+    {
+        $str = '/vagrant/www/yii2-app-advanced/backend/modules/sys/modules/sub1/controllers/DefaultController.php';
+//        var_dump(substr($str, 0, strrpos($str, 'controllers')));
+//        $arr = [
+//            ['id' => 100, 'n' => 'abc',],
+//            ['id' => 105, 'n' => 'edf',],
+//        ];
+//        foreach ($arr as &$value) {
+//            // unset($value);
+//        }
+//        print_r($arr);
+//        foreach($arr as $value) {}
+//        print_r($arr);
+
+        $dir = '/vagrant/www/yii2-app-advanced/backend/modules/sys';
+        $files = FileHelpers::findFiles($dir, [
+            // 'filter' => function($path) {},
+            'only' => ['pattern' => '*Controller.php'],
+            'recursive' => true,
+        ]);
+        Yii::debug($files);
+    }
+
+    public function actionTree()
+    {
+        $arr = [
+            ['id' => 1, 'pid' => 0, 'name' => '系统管理'],
+            ['id' => 10, 'pid' => 1, 'name' => '用户管理'],
+            ['id' => 20, 'pid' => 10, 'name' => '用户创建'],
+            ['id' => 30, 'pid' => 10, 'name' => '用户修改'],
+            ['id' => 50, 'pid' => 30, 'name' => '用户修改制定'],
+
+            ['id' => 2, 'pid' => 0, 'name' => '游戏管理'],
+            ['id' => 200, 'pid' => 2, 'name' => '游戏信息'],
+            ['id' => 210, 'pid' => 2, 'name' => '游戏对接'],
+            ['id' => 310, 'pid' => 210, 'name' => '对接腾讯'],
+        ];
+        $treeArr = ArrayHelpers::toTree($arr);
+        echo FileHelpers::printTree($treeArr);
+    }
+
+    public function actionMenu()
+    {
+        $arr = [
+            '1_20_27', '1_20_25', '1_20_30', '1_20_33',
+            '2_30_50',  '2_30_55',  '2_30_50_100',
+            '3_39_70_555',
+        ];
+        // ids: 1, 20, 2, 30, 3, 39
+
+        // 对应的表数据取出来 id, pid, name
+        /**
+         * 1, 0, 系统管理
+         * 2, 0, 游戏管理
+         * 3, 0, 运营管理
+         * 20, 1, 用户管理
+         * 27, 20, 用户修改
+         */
+        $ids = [];
+        // 取出两级
+        foreach ($arr as $key => $val ) {
+            $temp = explode('_', $val);
+            $id = $temp[count($temp)-1];  // save assign
+            $ids[]= $temp[0];
+            $ids[]= $temp[1];
+        }
+        $ids = array_unique($ids);
+        // save ids for role menu ids
+        print_r($ids);
     }
 
 

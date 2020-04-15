@@ -31,10 +31,9 @@ class AuthItemChild extends \yii\db\ActiveRecord
     {
         return [
             [['parent', 'child'], 'required'],
-            [['auth_type'], 'integer'],
             [['parent', 'child'], 'string', 'max' => 64],
-            [['parent'], 'exist', 'skipOnError' => true, 'targetClass' => AuthItem::className(), 'targetAttribute' => ['parent' => 'name']],
-            [['child'], 'exist', 'skipOnError' => true, 'targetClass' => AuthItem::className(), 'targetAttribute' => ['child' => 'name']],
+            [['parent'], 'exist', 'skipOnError' => true, 'targetClass' => AuthItemItem::className(), 'targetAttribute' => ['parent' => 'name']],
+            [['child'], 'exist', 'skipOnError' => true, 'targetClass' => AuthItemItem::className(), 'targetAttribute' => ['child' => 'name']],
         ];
     }
 
@@ -46,7 +45,6 @@ class AuthItemChild extends \yii\db\ActiveRecord
         return [
             'parent' => 'Parent',
             'child' => 'Child',
-            'auth_type' => 'Auth Type',
         ];
     }
 
@@ -55,7 +53,7 @@ class AuthItemChild extends \yii\db\ActiveRecord
      */
     public function getParent0()
     {
-        return $this->hasOne(AuthItem::className(), ['name' => 'parent']);
+        return $this->hasOne(AuthItemItem::className(), ['name' => 'parent']);
     }
 
     /**
@@ -63,6 +61,6 @@ class AuthItemChild extends \yii\db\ActiveRecord
      */
     public function getChild0()
     {
-        return $this->hasOne(AuthItem::className(), ['name' => 'child']);
+        return $this->hasOne(AuthItemItem::className(), ['name' => 'child']);
     }
 }

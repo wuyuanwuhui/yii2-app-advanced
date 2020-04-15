@@ -38,6 +38,7 @@ class RoleController extends Controller
 
     /**
      * 角色列表
+     *
      * Lists all AuthItem models.
      * @return mixed
      */
@@ -54,6 +55,7 @@ class RoleController extends Controller
 
     /**
      * 查看角色详情
+     *
      * Displays a single AuthItem model.
      * @param  string $id
      * @return mixed
@@ -67,6 +69,7 @@ class RoleController extends Controller
 
     /**
      * 新增角色
+     *
      * Creates a new AuthItem model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
@@ -86,6 +89,7 @@ class RoleController extends Controller
 
     /**
      * 修改角色
+     *
      * Updates an existing AuthItem model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param  string $id
@@ -105,6 +109,7 @@ class RoleController extends Controller
 
     /**
      * 删除角色
+     *
      * Deletes an existing AuthItem model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param  string $id
@@ -121,6 +126,7 @@ class RoleController extends Controller
 
     /**
      * 角色权限分配
+     *
      * Assign or remove items
      * @param string $id
      * @param string $action
@@ -166,7 +172,6 @@ class RoleController extends Controller
     }
 
     /**
-     *
      * @param string $id
      * @return array
      */

@@ -38,6 +38,7 @@ class LogController extends Controller
 
     /**
      * 查看列表
+     *
      * Lists all Log models.
      * @return mixed
      */
@@ -54,6 +55,7 @@ class LogController extends Controller
 
     /**
      * 查看日志详情
+     *
      * Displays a single Log model.
      * @param  integer $id
      * @return mixed
