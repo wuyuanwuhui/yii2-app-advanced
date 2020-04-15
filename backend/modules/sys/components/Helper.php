@@ -6,9 +6,60 @@ use Yii;
 use yii\caching\TagDependency;
 use yii\helpers\ArrayHelper;
 
-
 class Helper
 {
+    private static $parse;
+    public static function instanceParser()
+    {
+        if(self::$parse == null) {
+            self::$parse = new DocParser();
+        }
+        return self::$parse;
+    }
+
+    public static function DocParser($doc)
+    {
+        if (!$doc) return '';
+        return self::instanceParser()->parse($doc);
+    }
+
+    /**
+     * @param $object
+     * @param string $key
+     * @return string
+     */
+    public static function getComment($object, $key = 'description')
+    {
+        $comment = $object->getDocComment();
+        $comment = Helper::DocParser($comment);
+        return ($comment[$key]) ?? ($comment['long_description'] ?? '');
+    }
+
+    /**
+     * 生成树形结构：数组必须带有索引主键
+     * @param $items
+     * @param string $pid
+     * @param string $id
+     * @param string $children
+     * @return array
+     */
+    public static function toTree($items, $pid = 'pid', $id = 'id', $children = 'children'){
+        // convert into index array by id
+        $items = ArrayHelper::index($items, $id);
+        // make tree
+        $tree = array();
+        foreach($items as $item){
+            if(isset($items[$item[$pid]])){
+                $items[$item[$pid]][$children][] = &$items[$item[$id]];
+            }else{
+                $tree[] = &$items[$item[$id]];
+            }
+        }
+        return $tree;
+    }
+
+    // -------------------------------------------------------------------------------------------------------------
+
     private static $_userRoutes = [];
     private static $_defaultRoutes;
 
@@ -147,93 +198,7 @@ class Helper
     }
 
 
-    // -------------------------------------------------------------------------------------------------------------
 
-    private static $parse;
-
-    public static function instanceParser()
-    {
-        if(self::$parse == null) {
-            self::$parse = new DocParser();
-        }
-        return self::$parse;
-    }
-
-    public static function DocParser($doc)
-    {
-        if (!$doc) return '';
-        return self::instanceParser()->parse($doc);
-    }
-
-    /**
-     * @param $object
-     * @param string $key
-     * @return string
-     */
-    public static function getComment($object, $key = 'description')
-    {
-        $comment = $object->getDocComment();
-        $comment = Helper::DocParser($comment);
-        return ($comment[$key]) ?? ($comment['long_description'] ?? '');
-    }
-    // -------------------------------------------------------------------------------------------------------------
-
-    /**
-     * 生成树形结构：数组必须带有索引主键
-     * @param $items
-     * @param string $pid
-     * @param string $id
-     * @param string $children
-     * @return array
-     */
-    public static function toTree($items, $pid = 'pid', $id = 'id', $children = 'children'){
-        // convert into index array by id
-        $items = ArrayHelper::index($items, $id);
-        // make tree
-        $tree = array();
-        foreach($items as $item){
-            if(isset($items[$item[$pid]])){
-                $items[$item[$pid]][$children][] = &$items[$item[$id]];
-            }else{
-                $tree[] = &$items[$item[$id]];
-            }
-        }
-        return $tree;
-    }
-
-    /**
-     * @param $array
-     * @return array
-     */
-    public static function reserveArray($array)
-    {
-        static $newArray = [];
-        foreach($array as $key=>$val)
-        {
-            if(is_array($val) && !empty($val)) {
-                //array_unshift($newArray, $val);
-                $keys = array_keys($val);
-                $parent = !empty($keys[0]) ? $keys[0] : '';
-                $newArray[$key] = ['parent' => $parent, 'child' => $key];
-                self::reserveArray($val);
-            }
-            else {
-                $newArray[$key] = ['parent' => '', 'child' => $key];
-            }
-        }
-        return array_reverse($newArray);
-    }
-
-    public static function reverse($arr)
-    {
-        $temp = [];
-        end($arr);
-        while (($value = current($arr)) != null) {
-            $temp[key($arr)] = $value;
-            prev($arr);
-        }
-        return $temp;
-    }
 
 
 

@@ -14,24 +14,20 @@ class FileHelpers extends FileHelper
      */
     public static function scanDirFiles($dir)
     {
-        $result = $temp = [];
+        $result = [];
         if(is_dir($dir)) {
             $dh = opendir($dir);
             while(false !== ($file = readdir($dh))){
                 if ($file == '.' || $file == '..') continue;
                 $filePath  = $dir . '/' . $file;
                 if ( is_dir($filePath)){
-                    $result[$filePath] = static::scanDir($filePath);
+                    $result[$filePath] = static::scanDirFiles($filePath);
                 } else {
-                    $temp[] = $filePath;
+                    $result[$file] = $filePath;
                 }
             }
         }
-        if (!empty($temp)) {
-            foreach ($temp as $val){
-                $result[] = $val;
-            }
-        }
+
         return $result;
     }
 
@@ -41,7 +37,6 @@ class FileHelpers extends FileHelper
      * @param string extension
      * @return array
      */
-
     public static function fetchControllerFromDir($dir, $extension = 'Controller.php')
     {
         static $result = [];
@@ -63,38 +58,59 @@ class FileHelpers extends FileHelper
     }
 
     /**
-     * 从数组中删除空白的元素（包括只有空白字符的元素），支持多维数组
-     *
-     * 用法：
-     * @code php
-     * $arr = array('', 'test', '   ');
-     * Helper_Array::removeEmpty($arr);
-     *
-     * dump($arr);
-     *   // 输出结果中将只有 'test'
-     * @endcode
-     *
-     * @param array $arr 要处理的数组
-     * @param boolean $unsetEmpty 是否移除空元素
-     * @return array
+     * 打印出树形结构：前提数组本身已经是树形结构数组
+     * @param $arr
+     * @param string $l
+     * @return string
      */
-    static function removeEmpty($arr, $unsetEmpty = true) {
-        foreach ($arr as $key => $value) {
-            if (is_array($value) && count((array) $value) > 0) {
-                $arr[$key] = self::removeEmpty($value);
-            } else {
-                // $value = trim($value);
-                if(empty($value) && $unsetEmpty) {
-                    unset($arr[$key]);
-                } else {
-                    $arr[$key] = $value;
-                }
+    public static function printTree($arr, $l = '-|', $pids = '')
+    {
+        static $l = ''; static $str = ''; static $pids = '';
+
+        foreach ($arr as $key => $val) {
+            $ids = $val['id'];
+            $str .= $l . $val['name'] . "($pids$ids)" . "\r\n";
+            // 如果有子节点则递归
+            if (!empty($arr[$key]['children']) && is_array($arr[$key]['children'])) {
+                $l .= '-|';  // 加前缀
+                $pids .= $ids . '_'; // 并带上级pid
+                self::printTree($arr[$key]['children'], $l, $pids);
             }
         }
-        return $arr;
+        // 如果无子节点则置空变量
+        $l = $pids = '';
+        // 返回所拼接的字符串
+        return $str;
     }
 
+    // -------------------------------------------------------------------------------------------------------------
 
+    private static $parse;
+    public static function instanceParser()
+    {
+        if(self::$parse == null) {
+            self::$parse = new DocParser();
+        }
+        return self::$parse;
+    }
+
+    public static function DocParser($doc)
+    {
+        if (!$doc) return '';
+        return self::instanceParser()->parse($doc);
+    }
+
+    /**
+     * @param $object
+     * @param string $key
+     * @return string
+     */
+    public static function getComment($object, $key = 'description')
+    {
+        $comment = $object->getDocComment();
+        $comment = Helper::DocParser($comment);
+        return ($comment[$key]) ?? ($comment['long_description'] ?? '');
+    }
 
 
 }

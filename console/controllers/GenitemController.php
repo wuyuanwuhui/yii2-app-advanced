@@ -4,7 +4,7 @@ use Yii;
 use yii\console\Controller;
 use common\helpers\FileHelpers;
 use yii\helpers\StringHelper;
-use yii\helpers\ArrayHelper;
+use common\helpers\ArrayHelpers;
 use backend\modules\sys\components\Helper;
 
 class GenitemController extends Controller
@@ -98,17 +98,25 @@ class GenitemController extends Controller
     public function actionTest()
     {
         $str = '/vagrant/www/yii2-app-advanced/backend/modules/sys/modules/sub1/controllers/DefaultController.php';
-        var_dump(substr($str, 0, strrpos($str, 'controllers')));
-        $arr = [
-            ['id' => 100, 'n' => 'abc',],
-            ['id' => 105, 'n' => 'edf',],
-        ];
-        foreach ($arr as &$value) {
-            // unset($value);
-        }
-        print_r($arr);
-        foreach($arr as $value) {}
-        print_r($arr);
+//        var_dump(substr($str, 0, strrpos($str, 'controllers')));
+//        $arr = [
+//            ['id' => 100, 'n' => 'abc',],
+//            ['id' => 105, 'n' => 'edf',],
+//        ];
+//        foreach ($arr as &$value) {
+//            // unset($value);
+//        }
+//        print_r($arr);
+//        foreach($arr as $value) {}
+//        print_r($arr);
+
+        $dir = '/vagrant/www/yii2-app-advanced/backend/modules/sys';
+        $files = FileHelpers::findFiles($dir, [
+            // 'filter' => function($path) {},
+            'only' => ['pattern' => '*Controller.php'],
+            'recursive' => true,
+        ]);
+        Yii::debug($files);
     }
 
     public function actionTree()
@@ -125,54 +133,10 @@ class GenitemController extends Controller
             ['id' => 210, 'pid' => 2, 'name' => '游戏对接'],
             ['id' => 310, 'pid' => 210, 'name' => '对接腾讯'],
         ];
-
-        print_r(static::getTreeByRecursive($arr));
-
-        //$treeArr = Helper::toTree($arr);
-        //echo self::printTree($treeArr);
+        $treeArr = ArrayHelpers::toTree($arr);
+        echo FileHelpers::printTree($treeArr);
     }
 
-    public static function getTreeByRecursive($arr, $pid = 0, $level = 0)
-    {
-        static $list = [];
-        foreach ($arr as $key => $val) {
-            if ($val['pid'] == $pid) {
-                $val['level'] = $level;
-                $list[] = $val;
-                unset($arr[$key]);
-                static::getTreeByRecursive($arr, $val['id'], $level+1);
-            }
-        }
-        return $list;
-    }
-
-    public static function getTreeByRefer(){}
-
-    /**
-     * 打印出树形结构：前提数组本身已经是树形结构数组
-     * @param $arr
-     * @param string $l
-     * @return string
-     */
-    public static function printTree($arr, $l = '-|', $pids = '')
-    {
-        static $l = ''; static $str = ''; static $pids = '';
-
-        foreach ($arr as $key => $val) {
-            $ids = $val['id'];
-            $str .= $l . $val['name'] . "($pids$ids)" . "\r\n";
-            // 如果有子节点则递归
-            if (!empty($arr[$key]['children']) && is_array($arr[$key]['children'])) {
-                $l .= '-|';  // 加前缀
-                $pids .= $ids . '_'; // 并带上级pid
-                self::printTree($arr[$key]['children'], $l, $pids);
-            }
-        }
-        // 如果无子节点则置空变量
-        $l = '' = $pids = '';
-        // 返回所拼接的字符串
-        return $str;
-    }
 
 
 
