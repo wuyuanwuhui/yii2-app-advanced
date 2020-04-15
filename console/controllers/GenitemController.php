@@ -47,9 +47,9 @@ class GenitemController extends Controller
                 // 去掉前缀目录
                 $controllerFile = substr($controllerFile, strpos($controllerFile, $searchPath));
                 // parseModule
-                $module_id = $this->parseModuleFile($controllerFile);
+                $module = $this->parseModuleFile($controllerFile);
                 // parseController
-                $this->parseControllerFile($controllerFile, $module_id);
+                $this->parseControllerFile($controllerFile, $module);
             }
         }
         // 从缓存数据中重新保存到child 表
@@ -181,20 +181,20 @@ class GenitemController extends Controller
         if (empty($moduleComment)) exit($moduleClass . ' module comment is empty');
         Yii::debug($moduleComment);
 
-        $model = $this->saveAuthItem($moduleComment, 0, $moduleUrl);
+        $model = $this->saveAuthItem($moduleComment, 0, $moduleUrl, 1);
         if (!empty($model)) {
             $this->saveToAdmin($moduleComment);
         }
-        return  !empty($model) ? $model->id : 0;
+        return  !empty($model) ? $model : null;
     }
 
     /**
      * 分析controller 文件： 主要是文件夹注释、action 注释、action url
      * @param string $controllerFile
-     * @param int $pid
+     * @param object $module
      * @throws \ReflectionException
      */
-    public function parseControllerFile($controllerFile, $pid = 0)
+    public function parseControllerFile($controllerFile, $module = null)
     {
         // $controllerFile = 'backend/modules/sys/controllers/SysuserController.php';
         // 提取 url
@@ -208,9 +208,15 @@ class GenitemController extends Controller
         Yii::debug($controllerComment);
         if (empty($controllerComment)) exit($controllerFile . '  controllerComment is empty!');
 
+        $pid = !empty($module->id) ? $module->id : 0;
         // save action methods as auth_item
-        $controlItem = $this->saveAuthItem($controllerComment, $pid, $controllerUrl);
+        $controlItem = $this->saveAuthItem($controllerComment, $pid, $controllerUrl, 1);
         if (empty($controlItem)) exit("{$controllerFile} save saveAuthItem failed !");
+
+        if (!empty($module)) {
+            // save module comment for controller url parent -> child to auth_child
+            $this->saveItemChild($module->name, $controllerComment);
+        }
 
         // save action methods as auth_item
         $methods = $controlClass->getMethods(\ReflectionMethod::IS_PUBLIC);
@@ -247,7 +253,7 @@ class GenitemController extends Controller
      * @param string $path
      * @return string
      */
-    public function saveAuthItem($name, $pid = 0, $path = '')
+    public function saveAuthItem($name, $pid = 0, $path = '', $is_menu = 0)
     {
         if (!$name ) return '';
         $model = AuthItemItem::findOne(['name' => $name]);
@@ -257,6 +263,8 @@ class GenitemController extends Controller
             $model->type = Item::TYPE_PERMISSION;
             $model->pid = $pid;
             $model->path = $path;
+            $model->is_menu = $is_menu;
+
             if (!$model->save()) {
                 var_dump($model->getErrors()); die();
             }
