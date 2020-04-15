@@ -62,12 +62,6 @@ class FileHelpers extends FileHelper
         return $result;
     }
 
-    public static function f($dir)
-    {
-
-    }
-
-
     /**
      * 从数组中删除空白的元素（包括只有空白字符的元素），支持多维数组
      *
