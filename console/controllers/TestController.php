@@ -214,10 +214,16 @@ class TestController extends \yii\console\Controller
         print_r($ids);
     }
 
+    public function actionT()
+    {
+        var_dump(Yii::$app->cache->get('auth_item_child_all'));
+        // var_dump(Yii::$app->cache->get('auth_item'));
+        //var_dump(Yii::$app->cache->get('auth_item_child_role'));
 
+        //$optionValues = $this->getOptionValues('time');
+        //var_dump($optionValues);
 
-
-
+    }
 
 
 

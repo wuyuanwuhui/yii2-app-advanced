@@ -13,23 +13,12 @@ return [
     'bootstrap' => ['log'],
     'language' => 'zh-CN',
     'modules' => [
-        'admin' => [
-            'class' => 'izyue\admin\Module',
-//            'layout' => 'left-menu',
-//            'layout' => '@app/views/layouts/main.php',
-        ],
-
+        //'admin' => [ 'class' => 'izyue\admin\Module', ],
         'sys' => [
             'class' => 'backend\modules\sys\Module',
             //'layout' => 'left-menu',
             //'layout' => '@app/views/layouts/main.php',
-            'modules' => [
-                'sub1' => [
-                    'class' => 'backend\modules\sys\modules\sub1\Module',
-                ],
-            ],
         ],
-
     ],
     'components' => [
         'user' => [

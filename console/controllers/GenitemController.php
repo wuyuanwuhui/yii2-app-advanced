@@ -14,8 +14,14 @@ class GenitemController extends Controller
 {
     public static $controllerExt = 'Controller.php';
     public static $replace = ['backend', 'modules', 'controllers', 'Controller.php'];
-    // public $searchPath = '';
 
+    public $searchPath = 'backend/modules';
+    public $useCache = 0;
+
+    public function options($actionID)
+    {
+        return ['searchPath', 'useCache'];
+    }
 
     /**
      * 通过扫描目录获取module文件和controller文件生成权限以及菜单
@@ -27,13 +33,15 @@ class GenitemController extends Controller
      */
     public function actionRun($searchPath = 'backend/modules', $useCache = 0)
     {
+        // $optionValues = $this->getOptionValues('run'); //yii genitem/run --search-path='backend/modules'  use-cache=0
         if ($useCache == 1) {
             $itemChildCache = Yii::$app->cache->get('auth_item_child_all');
             $this->deleteItem();
             $this->saveItemFromCache();
         } else {
+            // 先从缓存中读取已经手动分配的角色权限 重新生成item后再次导入
             $itemChildCache = Yii::$app->cache->get('auth_item_child_role');
-            // 保存数据到换成
+            // 保存数据到缓存
             $this->saveToCache();
             // 删除item
             $this->deleteItem();
@@ -55,6 +63,20 @@ class GenitemController extends Controller
         // 从缓存数据中重新保存到child 表
         $this->saveItemChildFromCache($itemChildCache);
     }
+
+    /**
+     * 扫描单个控制器生成权限, 主要对于新增单个控制器来说很方便
+     *
+     * @param $controllerFile string 不要使用绝对路径, 从命名空间开始类似 backend/modules、app/sys/modules ...
+     * @param int $pid
+     * @throws \ReflectionException
+     */
+    public function actionRunOneController($controllerFile, $pid = 0)
+    {
+        $controllerFile = FileHelpers::normalizePath($controllerFile);
+        $this->parseControllerFile($controllerFile, $pid);
+    }
+
     static $defaultDuration = 24 * 3600;
     /**
      * 把表数据保存到缓存中
@@ -79,13 +101,6 @@ class GenitemController extends Controller
             exit('save auth_item_child_role cache error');
         }
         // $cache->getOrSet('item');
-    }
-
-    public function actionT()
-    {
-        var_dump(Yii::$app->cache->get('auth_item_child_all'));
-        // var_dump(Yii::$app->cache->get('auth_item'));
-        //var_dump(Yii::$app->cache->get('auth_item_child_role'));
     }
 
     /**
@@ -134,29 +149,6 @@ class GenitemController extends Controller
     }
 
     /**
-     * run 前先从数据库中删除 item 项, child 是中的字段外键来自item表所以同时会被删除
-     * @throws \yii\db\Exception
-     */
-    protected function deleteItem()
-    {
-        $delete = " Delete from auth_item Where type=" . Item::TYPE_PERMISSION;
-        Yii::$app->db->createCommand($delete)->execute();
-    }
-
-    /**
-     * 扫描单个控制器生成权限, 主要对于新增单个控制器来说很方便
-     *
-     * @param $controllerFile string 不要使用绝对路径, 从命名空间开始类似 backend/modules、app/sys/modules ...
-     * @param int $pid
-     * @throws \ReflectionException
-     */
-    public function actionRunOneController($controllerFile, $pid = 0)
-    {
-        $controllerFile = FileHelpers::normalizePath($controllerFile);
-        $this->parseControllerFile($controllerFile, $pid);
-    }
-
-    /**
      * 获取模块注释：保存模块为item 并返回模块名称以备给controller使用，因为模块是controller的父级
      *
      * @param string $controllerFile
@@ -170,7 +162,6 @@ class GenitemController extends Controller
         $modulePath = substr($controllerFile, 0, strrpos($controllerFile, 'controllers'));
         $moduleUrl = str_replace(static::$replace,'', $modulePath); // todo
         $moduleUrl = strtolower(FileHelpers::normalizePath($moduleUrl));
-
         $moduleClass =  $modulePath . 'Module';
         $moduleFile = Yii::getAlias('@' . $moduleClass) . '.php';
         if ( !file_exists($moduleFile)) exit($moduleFile . ' is not exists');
@@ -241,8 +232,8 @@ class GenitemController extends Controller
             // save action comment for action url parent -> child to auth_child
             $this->saveItemChild($actionComment, $actionUrl);
 
-            Yii::debug($actionComment);
-            Yii::debug($actionUrl);
+            // Yii::debug($actionComment);
+            // Yii::debug($actionUrl);
         }
     }
 
@@ -251,6 +242,7 @@ class GenitemController extends Controller
      * @param $name
      * @param int $pid
      * @param string $path
+     * @param int $is_menu
      * @return string
      */
     public function saveAuthItem($name, $pid = 0, $path = '', $is_menu = 0)
@@ -264,7 +256,9 @@ class GenitemController extends Controller
             $model->pid = $pid;
             $model->path = $path;
             $model->is_menu = $is_menu;
-
+            if ($is_menu == 1) {
+                $model->menu_level = substr_count($path, '/');
+            }
             if (!$model->save()) {
                 var_dump($model->getErrors()); die();
             }
@@ -314,7 +308,15 @@ class GenitemController extends Controller
         return $this->saveItemChild($parent, $child, Item::TYPE_ROLE);
     }
 
-
+    /**
+     * run 前先从数据库中删除 item 项, child 是中的字段外键来自item表所以同时会被删除
+     * @throws \yii\db\Exception
+     */
+    protected function deleteItem()
+    {
+        $delete = " Delete from auth_item Where type=" . Item::TYPE_PERMISSION;
+        Yii::$app->db->createCommand($delete)->execute();
+    }
 
 
 
