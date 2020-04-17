@@ -2,6 +2,8 @@
 
 namespace backend\modules\sys\controllers;
 
+use common\helpers\ArrayHelpers;
+use common\helpers\StringHelpers;
 use yii\rbac\Item;
 use Yii;
 use backend\modules\sys\models\AuthItem;
@@ -10,7 +12,8 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use backend\modules\sys\components\Helper;
-
+use console\models\AuthItemItem;
+use yii\helpers\VarDumper;
 
 /**
  * 角色管理
@@ -64,8 +67,29 @@ class RoleController extends Controller
     public function actionView($id)
     {
         $model = $this->findModel($id);
+        // $items = $this->getItems($id);
+        $items = AuthItemItem::find()->select('id, pid, name as label')
+            ->where(['type' => Item::TYPE_PERMISSION])
+            ->andWhere("left(`name`, 1) != '/'")
+            ->orderBy('id Asc')
+            ->asArray()
+            ->all();
 
-        return $this->render('view', ['model' => $model, 'items' => $this->getItems($id)]);
+        if (!empty($items)) {
+            $itemTree = ArrayHelpers::toTree($items);
+            VarDumper::dump($itemTree, 100, true);
+            $itemTreeStr = StringHelpers::printCheckboxesTree($itemTree);
+            echo $itemTreeStr;
+        }
+
+        exit;
+
+        $post = Yii::$app->request->post();
+        if (!empty($post)) {
+            var_dump($post);
+        }
+
+        return $this->render('view', ['model' => $model, 'items' => $items]);
     }
 
     /**

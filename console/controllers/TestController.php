@@ -177,7 +177,7 @@ class TestController extends \yii\console\Controller
             ['id' => 30, 'pid' => 10, 'name' => '用户修改'],
             ['id' => 50, 'pid' => 30, 'name' => '用户修改制定'],
 
-            ['id' => 2, 'pid' => 0, 'name' => '游戏管理'],
+            ['id' => 2, 'pid' => 1, 'name' => '游戏管理'],
             ['id' => 200, 'pid' => 2, 'name' => '游戏信息'],
             ['id' => 210, 'pid' => 2, 'name' => '游戏对接'],
             ['id' => 310, 'pid' => 210, 'name' => '对接腾讯'],
