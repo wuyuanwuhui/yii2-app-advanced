@@ -11,10 +11,11 @@ use yii\widgets\Breadcrumbs;
 use common\widgets\Alert;
 use yii\helpers\Url;
 use izyue\admin\components\MenuHelper;
+use yii\helpers\VarDumper;
+use console\models\AuthItemItem;
+use common\helpers\ArrayHelpers;
 
 AppAsset::register($this);
-
-$menuRows = MenuHelper::getAssignedMenu(Yii::$app->user->id);
 
 $route = Yii::$app->controller->getRoute();
 $routeArray = explode('/', $route);
@@ -23,11 +24,45 @@ $controllerName = implode('/', $routeArray);
 
 $this->registerCssFile('@web/statics/css/slidebars.css', ['depends'=>'backend\assets\AppAsset']);
 
+//$menuRows = [
+//    [
+//        'label' => '系统管理',
+//        'url' => '',
+//        'items' => [
+//            [
+//                'label' => '用户管理1',
+//                'url' => '/sys/sysuser/index',
+//            ],
+//        ],
+//    ],
+//];
+
+//$menuRows = MenuHelper::getAssignedMenu(Yii::$app->user->id); menu ids
+
+$roles = array_keys(Yii::$app->getAuthManager()->getRolesByUser(Yii::$app->user->id));
+if (in_array('Admin', $roles)) {
+    $where = "";
+} else {
+    // todo : Where 如果是非admin则过滤菜单ids
+    // $ids = Select id From role_menu Where role in (implode(',', $roles))
+    $where = " id in (943, 962) ";
+}
+$items = AuthItemItem::find()->select('id, pid, name as label')
+    ->addSelect(['url' => "CONCAT(path, '/index')"])
+    ->where('is_menu=1 And menu_level <=2')
+    ->andWhere($where)
+    ->orderBy('id Asc')
+    ->asArray()
+    ->all();
+
+$menuRows = ArrayHelpers::toTree($items, 'pid', 'id', 'items');
+//VarDumper::dump($menuRows, 100, true);
+//exit;
+
 function isSubUrl($menuArray, $route)
 {
 
     if (isset($menuArray) && is_array($menuArray)) {
-
         if (isset($menuArray['items'])) {
             foreach ($menuArray['items'] as $item)
             {
@@ -91,7 +126,8 @@ function initMenu($menuArray, $controllerName, $isSubUrl, $isShowIcon=false)
             $isSubMenu = isSubMenu($menuArray, $controllerName);
         } else {
             $route = Yii::$app->controller->getRoute();
-            $isSubMenu = isSubUrl($menuArray, $route);
+            $routePath = substr($route, 0, strrpos($route, '/')); // only path accept action
+            $isSubMenu = isSubUrl($menuArray, $routePath);
         }
         if ($isSubMenu) {
             $class = ' active ';

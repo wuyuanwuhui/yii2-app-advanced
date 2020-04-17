@@ -12,6 +12,8 @@ use backend\models\LoginForm;
  */
 class SiteController extends Controller
 {
+    // public $layout = false; // false, null,
+
     /**
      * @inheritdoc
      */

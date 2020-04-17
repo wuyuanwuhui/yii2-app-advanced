@@ -7,6 +7,8 @@ use yii\helpers\Console;
 use yii\helpers\VarDumper;
 use yii\db\Migration;
 use yii\console\ExitCode;
+use common\helpers\ArrayHelpers;
+use common\helpers\FileHelpers;
 
 class TestController extends \yii\console\Controller
 {
@@ -216,13 +218,18 @@ class TestController extends \yii\console\Controller
 
     public function actionT()
     {
-        var_dump(Yii::$app->cache->get('auth_item_child_all'));
+        // var_dump(Yii::$app->cache->get('auth_item_child_all'));
         // var_dump(Yii::$app->cache->get('auth_item'));
         //var_dump(Yii::$app->cache->get('auth_item_child_role'));
 
         //$optionValues = $this->getOptionValues('time');
         //var_dump($optionValues);
+        $arr = ['a', 'b', 'c'];
+        array_pop($arr);
+        var_dump($arr);
 
+        array_shift($arr);
+        var_dump($arr);
     }
 
 

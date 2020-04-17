@@ -9,6 +9,7 @@ use backend\modules\sys\models\searchs\AuthItem as AuthItemSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use backend\modules\sys\components\Helper;
 
 
 /**
@@ -117,9 +118,13 @@ class RoleController extends Controller
      */
     public function actionDelete($id)
     {
-        $model = $this->findModel($id);
-        Yii::$app->getAuthManager()->remove($model->item);
-        Helper::invalidate();
+        if (Yii::$app->params['adminRole'] == $id) { // 不可删除
+
+        } else {
+            $model = $this->findModel($id);
+            Yii::$app->getAuthManager()->remove($model->item);
+            Helper::invalidate();
+        }
 
         return $this->redirect(['index']);
     }

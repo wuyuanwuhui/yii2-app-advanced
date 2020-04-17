@@ -12,6 +12,8 @@ return [
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
     'language' => 'zh-CN',
+    //'layout' => null,
+
     'modules' => [
         //'admin' => [ 'class' => 'izyue\admin\Module', ],
         'sys' => [
