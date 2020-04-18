@@ -9,36 +9,50 @@
 namespace common\helpers;
 
 use yii\helpers\StringHelper;
+use yii\helpers\Html;
 
 class StringHelpers extends StringHelper
 {
 
     /**
-     * 打印出树形结构：前提数组本身已经是树形结构数组
-     *
-     * @param $arrTree
-     * @param string $l
+     * 打印出树状图：前提数组本身已经是树形结构数组
+     * @param $arr
+     * @param int $level
+     * @param array $ppid
      * @return string
      */
-    public static function printCheckboxesTree($arrTree, $l = '-|', $pids = '')
+    public static function printCheckboxesTree($arr, $level = 0, $ppid = [])
     {
-        static $l = ''; static $str = ''; static $pids = '';
+        static $str = '';
+        foreach ($arr as $key => $val)
+        {
+            if ($val['pid'] != 0) {
+                $ppid[] = $val['pid'];
+                $ppid = array_unique($ppid);
+            }
+            // $prefix = str_repeat('-|', $level);
+            $pids = '';
+            if (!empty($ppid)) {
+                $pids = implode('_', $ppid) . '_';
+            }
+            $checkbox = Html::checkbox("items[{$val['label']}]", false, [
+                'label' => $val['label'],
+                'value' => "$pids{$val['id']}",
+                'has_children' => 0
+            ]);
 
-        foreach ($arrTree as $key => $val) {
-            $ids = $val['id'];
-            $str .= $l . $val['label'] . "($pids$ids)" . "<br/>";
+            $str .= $checkbox;
+
             // 如果有子节点则递归
-            if (!empty($arrTree[$key]['children']) && is_array($arrTree[$key]['children'])) {
-                $l .= '-|';  // 加前缀
-                $pids .= $ids . '_'; // 并带上级pid
-                self::printCheckboxesTree($arrTree[$key]['children'], $l, $pids);
+            if (!empty($arr[$key]['children']) && is_array($arr[$key]['children'])) {
+                self::printCheckboxesTree($arr[$key]['children'],$level+1, $ppid);
             }
         }
-        // 如果无子节点则置空变量
-        $l = $pids = '';
         // 返回所拼接的字符串
         return $str;
     }
+
+
 
 
 

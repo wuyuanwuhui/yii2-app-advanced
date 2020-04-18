@@ -77,19 +77,17 @@ class RoleController extends Controller
 
         if (!empty($items)) {
             $itemTree = ArrayHelpers::toTree($items);
-            VarDumper::dump($itemTree, 100, true);
+            // VarDumper::dump($itemTree, 100, true);
             $itemTreeStr = StringHelpers::printCheckboxesTree($itemTree);
-            echo $itemTreeStr;
+            //echo $itemTreeStr; exit;
         }
-
-        exit;
 
         $post = Yii::$app->request->post();
         if (!empty($post)) {
             var_dump($post);
         }
 
-        return $this->render('view', ['model' => $model, 'items' => $items]);
+        return $this->render('view', ['model' => $model, 'itemTreeStr' => $itemTreeStr]);
     }
 
     /**

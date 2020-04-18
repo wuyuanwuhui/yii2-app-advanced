@@ -172,6 +172,7 @@ class TestController extends \yii\console\Controller
     {
         $arr = [
             ['id' => 1, 'pid' => 0, 'name' => '系统管理'],
+
             ['id' => 10, 'pid' => 1, 'name' => '用户管理'],
             ['id' => 20, 'pid' => 10, 'name' => '用户创建'],
             ['id' => 30, 'pid' => 10, 'name' => '用户修改'],
@@ -180,9 +181,18 @@ class TestController extends \yii\console\Controller
             ['id' => 2, 'pid' => 1, 'name' => '游戏管理'],
             ['id' => 200, 'pid' => 2, 'name' => '游戏信息'],
             ['id' => 210, 'pid' => 2, 'name' => '游戏对接'],
-            ['id' => 310, 'pid' => 210, 'name' => '对接腾讯'],
+            ['id' => 310, 'pid' => 2, 'name' => '对接腾讯'],
+
+            ['id' => 310, 'pid' => 1, 'name' => 'xxxx'],
+            ['id' => 311, 'pid' => 310, 'name' => 'xxxx2'],
+            ['id' => 312, 'pid' => 310, 'name' => 'xxxx3'],
+
+            ['id' => 550, 'pid' => 50, 'name' => '0000'],
+            ['id' => 551, 'pid' => 550, 'name' => '00000'],
+            ['id' => 557, 'pid' => 550, 'name' => '00000'],
         ];
         $treeArr = ArrayHelpers::toTree($arr);
+        // print_r($treeArr); exit;
         echo FileHelpers::printTree($treeArr);
     }
 

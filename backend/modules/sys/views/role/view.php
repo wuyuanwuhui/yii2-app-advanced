@@ -12,12 +12,12 @@ $this->title = $model->name;
 $this->params['breadcrumbs'][] = ['label' => Yii::t('rbac-admin', 'Roles'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 
-$opts = Json::htmlEncode([
-        'assignUrl' => Url::to(['assign', 'id' => $model->name]),
-        'items' => $items
-    ]);
-$this->registerJs("var _opts = {$opts};");
-$this->registerJs($this->render('_script.js'));
+//$opts = Json::htmlEncode([
+//        'assignUrl' => Url::to(['assign', 'id' => $model->name]),
+//        'items' => $items
+//    ]);
+//$this->registerJs("var _opts = {$opts};");
+//$this->registerJs($this->render('_script.js'));
 ?>
 
 <section class="wrapper site-min-height">
@@ -57,21 +57,11 @@ $this->registerJs($this->render('_script.js'));
 
                     <div class="row">
 
-                        <div class="col-lg-5">
-                            <input class="form-control search" data-target="avaliable"
-                                   placeholder="<?= Yii::t('rbac-admin', 'Search for avaliable') ?>">
-                            <select multiple size="20" class="form-control list" data-target="avaliable">
-                            </select>
-                        </div>
 
-                        <div class="col-lg-5">
+                        <div class="col-lg-12">
                             <?=Html::beginForm()?>
 
-                            <?=Html::checkbox('items[]', false, [
-                                    'label' => '用户创建',
-                                    'value' => '1_2_3',
-                                    'has_children' => 0
-                            ]);?>
+                            <?=$itemTreeStr?>
 
                             <div class="form-group">
                                 <div class="col-lg-offset-2 col-lg-10">
