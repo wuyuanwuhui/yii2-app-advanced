@@ -68,10 +68,11 @@ class RoleController extends Controller
     {
         $model = $this->findModel($id);
         // $items = $this->getItems($id);
-        $items = AuthItemItem::find()->select('id, pid, name as label')
+        $items = AuthItemItem::find()->select('id, pid, name as label, is_menu')
             ->where(['type' => Item::TYPE_PERMISSION])
             ->andWhere("left(`name`, 1) != '/'")
             ->orderBy('id Asc')
+            ->limit(5)
             ->asArray()
             ->all();
 

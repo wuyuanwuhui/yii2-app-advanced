@@ -16,7 +16,8 @@
         "yiisoft/yii2-swiftmailer": "*",
         "izyue/yii2-admin": "*",
         "yiidoc/yii2-redactor": "*",
-        "yiisoft/yii2-imagine": "*"
+        "yiisoft/yii2-imagine": "*",
+        "yiisoft/yii2-jui": "^2.0"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",

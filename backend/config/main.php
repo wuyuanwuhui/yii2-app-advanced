@@ -43,6 +43,9 @@ return [
         'authManager' => [
             'class' => 'yii\rbac\DbManager', // or use 'yii\rbac\PhpManager'
         ],
+
+        // assetManager
+
         'i18n' => [
             'translations' => [
                 'common' => [

@@ -2,6 +2,7 @@
 
 namespace console\controllers;
 
+use common\helpers\StringHelpers;
 use Yii;
 use yii\helpers\Console;
 use yii\helpers\VarDumper;
@@ -170,6 +171,31 @@ class TestController extends \yii\console\Controller
 
     public function actionTree()
     {
+//        $arr = [
+//            100 => [
+//                33 => [
+//                    'abc' => '33abc', 'name' => 'b'
+//                ],
+//                50 => [
+//                    'abc' => '50abc', 'name' => '50000name'
+//                ],
+//            ]
+//        ];
+//
+//        $str = '';
+//        foreach($arr as $key => $val)
+//        {
+//            if ($val == current($arr)) {
+//                $str .= '<fieldset>';
+//            }
+//            $str .= "<$key>";
+//            if ($val == end($arr)) {
+//                $str .= '</fieldset>';
+//            }
+//        }
+//        var_dump($str);
+//        exit;
+
         $arr = [
             ['id' => 1, 'pid' => 0, 'name' => '系统管理'],
 
@@ -193,7 +219,7 @@ class TestController extends \yii\console\Controller
         ];
         $treeArr = ArrayHelpers::toTree($arr);
         // print_r($treeArr); exit;
-        echo FileHelpers::printTree($treeArr);
+        echo StringHelpers::printTree($treeArr);
     }
 
     public function actionMenu()

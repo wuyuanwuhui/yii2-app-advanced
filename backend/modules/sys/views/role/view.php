@@ -61,7 +61,27 @@ $this->params['breadcrumbs'][] = $this->title;
                         <div class="col-lg-12">
                             <?=Html::beginForm()?>
 
-                            <?=$itemTreeStr?>
+
+    <fieldset>
+        <legend >
+            <label><input type="checkbox" name="items[系统管理]" value="943" has_children="0"> 系统管理</label>
+        </legend>
+        <fieldset >
+            <legend>
+                <label><input type="checkbox" name="items[日志管理]" value="943_944" has_children="0"> 日志管理</label>
+            </legend>
+            <label><input type="checkbox" name="items[查看列表]" value="943_944_945" has_children="0"> 查看列表</label>
+            <label><input type="checkbox" name="items[查看日志详情]" value="943_944_947" has_children="0"> 查看日志详情</label>
+        </fieldset>
+        <fieldset>
+            <label><input type="checkbox" name="items[角色管理]" value="943_949" has_children="0"> 角色管理</label>
+        </fieldset>
+    </fieldset>
+
+
+
+
+                            <div class="col-sm-6"> </div>
 
                             <div class="form-group">
                                 <div class="col-lg-offset-2 col-lg-10">
