@@ -13,7 +13,9 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use backend\modules\sys\components\Helper;
 use console\models\AuthItemItem;
+use console\models\AuthItemChild;
 use yii\helpers\VarDumper;
+use backend\modules\sys\models\RoleItemIds;
 
 /**
  * 角色管理
@@ -67,28 +69,59 @@ class RoleController extends Controller
     public function actionView($id)
     {
         $model = $this->findModel($id);
-        // $items = $this->getItems($id);
         $items = AuthItemItem::find()->select('id, pid, name as label, is_menu')
             ->where(['type' => Item::TYPE_PERMISSION])
             ->andWhere("left(`name`, 1) != '/'")
             ->orderBy('id Asc')
-            // ->limit(5)
             ->asArray()
             ->all();
-
+        $id = trim($id);
+        $itemTreeStr = '';
+        $roleItemIdsModel = RoleItemIds::findOne(['role' => $id]);
         if (!empty($items)) {
+            $itemids = $roleItemIdsModel->itemids ?? '';
+            $itemids = explode(',', $itemids);
             $itemTree = ArrayHelpers::toTree($items);
-            // VarDumper::dump($itemTree, 100, true);
-            $itemTreeStr = StringHelpers::printCheckboxesTree($itemTree);
-            //echo $itemTreeStr; exit;
+            $itemTreeStr = StringHelpers::printCheckboxesTree($id, $itemids, $itemTree);
         }
-
+        // submit post
         $post = Yii::$app->request->post();
         if (!empty($post)) {
-            var_dump($post);
-            // 保存到菜单权限表：菜单ids(存两级即可)、权限ids
-        }
+            if ($id && ($id != Yii::$app->params['adminRole'])) {
+                if (!$roleItemIdsModel) $roleItemIdsModel = new RoleItemIds;
+                $postItems = $post['items'];
+                AuthItemChild::deleteAll(['parent' => $id]);
+                $authType = Item::TYPE_PERMISSION;
+                $menuids = $itemids = [];
 
+                foreach($postItems as $key => $val)
+                {
+                    $clondeModel = new AuthItemChild;
+                    $clondeModel->parent = $id;
+                    $clondeModel->child = $key;
+                    $clondeModel->auth_type = $authType;
+                    if ( !$clondeModel->save()) {
+                        var_dump($clondeModel->getErrors()); exit;
+                    }
+                    $ids = explode('_', $val);
+                    if (!empty($ids)) {
+                        if (!empty($ids[0])) $menuids[] = $ids[0];
+                        if (!empty($ids[1])) $menuids[] = $ids[1];
+                        $itemids[] = $ids[count($ids)-1];
+                    }
+                }
+                $menuids = array_unique($menuids);
+                $roleItemIdsModel->role = $id;
+                // 保存到菜单权限表：菜单ids(存两级即可)、权限ids
+                $roleItemIdsModel->menuids = implode(',', $menuids);
+                $roleItemIdsModel->itemids = implode(',', $itemids);
+                if (!$roleItemIdsModel->save()) {
+                    var_dump($roleItemIdsModel->getErrors()); exit;
+                }
+                // var_dump($postItems);
+            }
+            return $this->refresh(); // refresh to get new data
+        }
         return $this->render('view', ['model' => $model, 'itemTreeStr' => $itemTreeStr]);
     }
 

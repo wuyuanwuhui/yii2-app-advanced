@@ -8,6 +8,7 @@
 
 namespace common\helpers;
 
+use Yii;
 use yii\helpers\StringHelper;
 use yii\helpers\Html;
 
@@ -21,7 +22,7 @@ class StringHelpers extends StringHelper
      * @param array $ppid
      * @return string
      */
-    public static function printCheckboxesTree($arr, $level = 0, $ppid = [])
+    public static function printCheckboxesTree($id, $itemids, $arr, $level = 0, $ppid = [])
     {
         static $str = '';
         foreach ($arr as $key => $val)
@@ -35,20 +36,26 @@ class StringHelpers extends StringHelper
             if (!empty($ppid)) {
                 $pids = implode('_', $ppid) . '_';
             }
+            // depend for permission table
+            if ($id == Yii::$app->params['adminRole'] || in_array($val['id'], $itemids)) {
+                $checked = true;
+            } else {
+                $checked = false;
+            }
             $checkbox = Html::checkbox("items[{$val['label']}]", false, [
                 'label' => $val['label'],
                 'value' => "$pids{$val['id']}",
                 'is_menu' => $val['is_menu'],
                 'id' => $val['id'],
                 'pid' => $val['pid'],
-                // 'checked' => 'true' // depend for permission table
+                'checked' => $checked
             ]);
 
             // 如果有子节点则递归
             if (!empty($arr[$key]['children']) && is_array($arr[$key]['children'])) {
                 $str .= "<div class=\"panel-heading\">{$checkbox}</div>";
                 $str .= "<div class=\"panel-body\">";
-                self::printCheckboxesTree($arr[$key]['children'],$level+1, $ppid);
+                self::printCheckboxesTree($id, $itemids, $arr[$key]['children'],$level+1, $ppid);
             } else {
                 $str .= "<div class=\"checkbox\">" . $checkbox . '</div>';
             }
