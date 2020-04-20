@@ -30,22 +30,27 @@ $this->registerCssFile('@web/statics/css/slidebars.css', ['depends'=>'backend\as
 //        'url' => '',
 //        'items' => [
 //            [
-//                'label' => '用户管理1',
+//                'label' => '用户管理',
 //                'url' => '/sys/sysuser/index',
 //            ],
 //        ],
 //    ],
 //];
 
-//$menuRows = MenuHelper::getAssignedMenu(Yii::$app->user->id); menu ids
-
 $roles = array_keys(Yii::$app->getAuthManager()->getRolesByUser(Yii::$app->user->id));
-if (in_array('Admin', $roles)) {
-    $where = "";
-} else {
-    // todo : Where 如果是非admin则过滤菜单ids
-    // $ids = Select id From role_menu Where role in (implode(',', $roles))
-    $where = " id in (943, 962) ";
+$where = "";
+
+// Where 如果是非admin则过滤菜单ids
+if (!in_array(Yii::$app->params['adminRole'], $roles)) {
+    $roles = implode("','", $roles);
+    $sql = "select menuids from role_item_ids Where role in ('$roles')";
+    $items = Yii::$app->db->createCommand($sql)->queryColumn();
+    $ids = [];
+    foreach($items as $val) {
+        $ids[] = $val;
+    }
+    $ids = implode(',', array_unique($ids));
+    if (!empty($ids)) $where = " id in ($ids) ";
 }
 $items = AuthItemItem::find()->select('id, pid, name as label')
     ->addSelect(['url' => "CONCAT(path, '/index')"])
@@ -57,11 +62,9 @@ $items = AuthItemItem::find()->select('id, pid, name as label')
 
 $menuRows = ArrayHelpers::toTree($items, 'pid', 'id', 'items');
 //VarDumper::dump($menuRows, 100, true);
-//exit;
 
 function isSubUrl($menuArray, $route)
 {
-
     if (isset($menuArray) && is_array($menuArray)) {
         if (isset($menuArray['items'])) {
             foreach ($menuArray['items'] as $item)
@@ -83,14 +86,11 @@ function isSubUrl($menuArray, $route)
         }
     }
     return false;
-
 }
 
 function isSubMenu($menuArray, $controllerName)
 {
-
     if (isset($menuArray) && is_array($menuArray)) {
-
         if (isset($menuArray['items'])) {
             foreach ($menuArray['items'] as $item)
             {
@@ -111,10 +111,7 @@ function isSubMenu($menuArray, $controllerName)
         }
     }
     return false;
-
 }
-
-
 
 function initMenu($menuArray, $controllerName, $isSubUrl, $isShowIcon=false)
 {
@@ -154,7 +151,6 @@ function initMenu($menuArray, $controllerName, $isSubUrl, $isShowIcon=false)
 
         echo '</li>';
     }
-
 }
 
 ?>
