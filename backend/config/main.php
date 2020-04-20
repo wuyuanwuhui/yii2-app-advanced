@@ -45,6 +45,10 @@ return [
         ],
 
         // assetManager
+        'assetManager' => [
+            'appendTimestamp' => true,
+            'linkAssets' => true,
+        ],
 
         'i18n' => [
             'translations' => [

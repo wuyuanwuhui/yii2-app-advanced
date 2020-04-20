@@ -38,20 +38,22 @@ class StringHelpers extends StringHelper
             $checkbox = Html::checkbox("items[{$val['label']}]", false, [
                 'label' => $val['label'],
                 'value' => "$pids{$val['id']}",
-                'has_children' => 0
+                'is_menu' => $val['is_menu'],
+                'id' => $val['id'],
+                'pid' => $val['pid'],
+                // 'checked' => 'true' // depend for permission table
             ]);
-            if ($val['is_menu'] == 1) {
-                $str .= '<fieldset class="col-lg-12">';
-            }
+
             // 如果有子节点则递归
             if (!empty($arr[$key]['children']) && is_array($arr[$key]['children'])) {
-                $str .= "<legend class='col-lg-10'>{$checkbox}</legend>";
+                $str .= "<div class=\"panel-heading\">{$checkbox}</div>";
+                $str .= "<div class=\"panel-body\">";
                 self::printCheckboxesTree($arr[$key]['children'],$level+1, $ppid);
             } else {
-                $str .= $checkbox;
+                $str .= "<div class=\"checkbox\">" . $checkbox . '</div>';
             }
             if ($val['is_menu'] == 1) {
-                $str .= '</fieldset>';
+                $str .= '</div>';
             }
         }
         // 返回所拼接的字符串

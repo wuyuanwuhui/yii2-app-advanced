@@ -17,6 +17,8 @@ class AppAsset extends AssetBundle
         'statics/assets/font-awesome/css/font-awesome.css',
         'statics/css/style.css',
         'statics/css/style-responsive.css',
+
+        'statics/css/my-style.css',
     ];
     public $js = [
         'statics/js/jquery.dcjqaccordion.2.7.js',

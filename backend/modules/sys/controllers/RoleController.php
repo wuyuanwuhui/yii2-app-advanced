@@ -72,7 +72,7 @@ class RoleController extends Controller
             ->where(['type' => Item::TYPE_PERMISSION])
             ->andWhere("left(`name`, 1) != '/'")
             ->orderBy('id Asc')
-            ->limit(5)
+            // ->limit(5)
             ->asArray()
             ->all();
 
@@ -86,6 +86,7 @@ class RoleController extends Controller
         $post = Yii::$app->request->post();
         if (!empty($post)) {
             var_dump($post);
+            // 保存到菜单权限表：菜单ids(存两级即可)、权限ids
         }
 
         return $this->render('view', ['model' => $model, 'itemTreeStr' => $itemTreeStr]);
