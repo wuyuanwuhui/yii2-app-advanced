@@ -70,10 +70,7 @@ class RoleController extends Controller
     {
         $model = $this->findModel($id);
         $items = AuthItemItem::find()->select('id, pid, name as label, is_menu')
-            ->where(['type' => Item::TYPE_PERMISSION])
-            ->andWhere("left(`name`, 1) != '/'")
-            ->orderBy('id Asc')
-            ->asArray()
+            ->where(['type' => Item::TYPE_PERMISSION])->andWhere("left(`name`, 1) != '/'")->orderBy('id Asc')->asArray()
             ->all();
         $id = trim($id);
         $itemTreeStr = '';
@@ -118,7 +115,6 @@ class RoleController extends Controller
                 if (!$roleItemIdsModel->save()) {
                     var_dump($roleItemIdsModel->getErrors()); exit;
                 }
-                // var_dump($postItems);
             }
             return $this->refresh(); // refresh to get new data
         }

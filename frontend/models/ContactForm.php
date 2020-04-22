@@ -15,6 +15,7 @@ class ContactForm extends Model
     public $subject;
     public $body;
     public $verifyCode;
+    public $date;
 
 
     /**
@@ -29,6 +30,7 @@ class ContactForm extends Model
             ['email', 'email'],
             // verifyCode needs to be entered correctly
             ['verifyCode', 'captcha'],
+            ['date', 'date']
         ];
     }
 

@@ -1,2 +1,4 @@
 
-alert($('#item_943')).val();
+$(function(){
+    alert('updated');
+});
