@@ -27,6 +27,8 @@ class AppAsset extends AssetBundle
         'statics/js/jquery.sparkline.js',
         'statics/js/slidebars.min.js',
         'statics/js/common-scripts.js',
+
+        // 'statics/my-assets/my.js',   // 自动更新问题，必须删除源文件再刷新一下再重新新建才行, 重新命名是一种方法
     ];
     public $depends = [
         'yii\web\YiiAsset',

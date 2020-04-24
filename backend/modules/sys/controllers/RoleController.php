@@ -276,6 +276,16 @@ class RoleController extends Controller
         }
     }
 
+    // ----------------------------------------------------------------------------------------------------------------
+
+    public function actionTest()
+    {
+        return $this->render('test');
+    }
+
+
+
+
 
 
 }
