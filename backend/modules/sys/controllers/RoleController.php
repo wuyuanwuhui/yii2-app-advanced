@@ -183,53 +183,6 @@ class RoleController extends Controller
     }
 
     /**
-     * 角色权限分配
-     *
-     * Assign or remove items
-     * @param string $id
-     * @param string $action
-     * @return array
-     */
-    public function actionAssign($id)
-    {
-        $post = Yii::$app->getRequest()->post();
-        $action = $post['action'];
-        $roles = $post['roles'];
-        $manager = Yii::$app->getAuthManager();
-        $parent = $this->type === Item::TYPE_ROLE ? $manager->getRole($id) : $manager->getPermission($id);
-
-        $error = [];
-        if ($action == 'assign') {
-            foreach ($roles as $role) {
-                $child = $manager->getPermission($role);
-                if ($this->type === Item::TYPE_ROLE && $child === null) {
-                    $child = $manager->getRole($role);
-                }
-                try {
-                    $manager->addChild($parent, $child);
-                } catch (\Exception $e) {
-                    $error[] = $e->getMessage();
-                }
-            }
-        } else {
-            foreach ($roles as $role) {
-                $child = $manager->getPermission($role);
-                if ($this->type === Item::TYPE_ROLE && $child === null) {
-                    $child = $manager->getRole($role);
-                }
-                try {
-                    $manager->removeChild($parent, $child);
-                } catch (\Exception $e) {
-                    $error[] = $e->getMessage();
-                }
-            }
-        }
-        Helper::invalidate();
-        Yii::$app->getResponse()->format = 'json';
-        return $this->getItems($id);
-    }
-
-    /**
      * @param string $id
      * @return array
      */

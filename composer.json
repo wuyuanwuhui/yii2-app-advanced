@@ -1,12 +1,12 @@
 {
-    "name": "izyue/yii2-app-advanced",
+    "name": "wuyuanwuhui/yii2-app-advanced",
     "description": "Yii 2 Advanced Project Template",
     "keywords": ["yii2", "framework", "advanced", "project template"],
-    "homepage": "http://www.izyue.com",
+    "homepage": "https://github.com/wuyuanwuhui/yii2-app-advanced",
     "type": "project",
     "license": "BSD-3-Clause",
     "support": {
-        "source": "https://github.com/liulipeng/yii2-app-advanced"
+        "source": "https://github.com/wuyuanwuhui/yii2-app-advanced"
     },
     "minimum-stability": "stable",
     "require": {
@@ -14,7 +14,6 @@
         "yiisoft/yii2": ">=2.0.6",
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
-        "izyue/yii2-admin": "*",
         "yiidoc/yii2-redactor": "*",
         "yiisoft/yii2-imagine": "*",
         "yiisoft/yii2-jui": "^2.0"

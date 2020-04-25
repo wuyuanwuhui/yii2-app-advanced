@@ -524,16 +524,16 @@
             "time": "2019-12-04T09:55:33+00:00"
         },
         {
-            "name": "izyue/yii2-admin",
+            "name": "yii2-app-advanced",
             "version": "1.0.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/liulipeng/Yii2-Admin.git",
+                "url": "https://github.com/wuyuanwuhui/yii2-app-advanced",
                 "reference": "dcb2e25ccf7a5b5a54365351c6f9c39cc5412413"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liulipeng/Yii2-Admin/zipball/dcb2e25ccf7a5b5a54365351c6f9c39cc5412413",
+                "url": "",
                 "reference": "dcb2e25ccf7a5b5a54365351c6f9c39cc5412413",
                 "shasum": ""
             },
@@ -546,7 +546,7 @@
             "type": "yii2-extension",
             "autoload": {
                 "psr-4": {
-                    "izyue\\admin\\": ""
+		    "wuyuanwuhui\\yii2-app-advanced\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -555,15 +555,14 @@
             ],
             "authors": [
                 {
-                    "name": "刘李鹏",
-                    "email": "liu.lipeng@icloud.com"
+                    "name": "wuyuanwuhui",
+                    "email": "wuyuanwuhui"
                 }
             ],
             "description": "RBAC Auth manager for Yii2 ",
             "keywords": [
                 "admin",
                 "auth",
-                "izyue",
                 "rbac",
                 "yii",
                 "yii2-admin"
