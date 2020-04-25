@@ -10,6 +10,15 @@ use console\models\AuthItemItem;
 use console\models\AuthItemChild;
 use yii\rbac\Item;
 
+/**
+ * Class GenitemController
+ *
+ * @description 将路由生成权限: 只需要运行 php yii genitem/run 即可
+ *
+ * @hint 注意: 前端VUE定义的路由命名必须与自动生成的模块路由一致，详见数据库auth_item 表 path 字段
+ *
+ * @package console\controllers
+ */
 class GenitemController extends Controller
 {
     public static $controllerExt = 'Controller.php';
@@ -25,6 +34,10 @@ class GenitemController extends Controller
 
     /**
      * 通过扫描目录获取module文件和controller文件生成权限以及菜单
+     *
+     *  1. 将已经分配的权限保存到缓存
+     *  2. 支持添加单个控制器的权限不影响
+     *  3. 支持回滚到执行失败之前的状态 useCache = 1
      *
      * @param string $searchPath 不要使用绝对路径根目录, 从命名空间开始类似 backend/modules、app/sys/modules ...
      * @param int $useCache

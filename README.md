@@ -78,27 +78,7 @@ Password: @newsnow.com.cn@
 
 #### 登录
 
-![](http://www.izyue.com/yii2-admin/index/1.jpg)
 
-#### 首页
-
-![](http://www.izyue.com/yii2-admin/index/2.jpg)
-
-#### 权限管理
-
-![](http://www.izyue.com/yii2-admin/index/3.jpg)
-
-#### 角色管理
-
-![](http://www.izyue.com/yii2-admin/index/4.jpg)
-
-#### 路由管理
-
-![](http://www.izyue.com/yii2-admin/index/5.jpg)
-
-#### 菜单管理
-
-![](http://www.izyue.com/yii2-admin/index/6.jpg)
 
 DIRECTORY STRUCTURE
 -------------------
