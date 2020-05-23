@@ -18,6 +18,10 @@ return [
         ],
     ],
 
+//    'aliases' => [
+//        '@elasticsearch' => '@vendor/yiisoft/yii2-elasticsearch',
+//    ],
+
     'components' => [
         'log' => [
             'targets' => [

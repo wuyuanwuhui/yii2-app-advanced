@@ -10,6 +10,7 @@ use yii\db\Migration;
 use yii\console\ExitCode;
 use common\helpers\ArrayHelpers;
 use common\helpers\FileHelpers;
+use yii\elasticsearch\Connection;
 
 class TestController extends \yii\console\Controller
 {
@@ -260,12 +261,17 @@ class TestController extends \yii\console\Controller
 
         //$optionValues = $this->getOptionValues('time');
         //var_dump($optionValues);
-        $arr = ['a', 'b', 'c'];
-        array_pop($arr);
-        var_dump($arr);
+//        $arr = ['a', 'b', 'c'];
+//        array_pop($arr);
+//        var_dump($arr);
+//
+//        array_shift($arr);
+//        var_dump($arr);
 
-        array_shift($arr);
-        var_dump($arr);
+        // $conn = new \yii\elasticsearch\Connection();
+        $conn = new Connection();
+        $conn->createCommand()->search();
+        var_dump($conn);
     }
 
 
