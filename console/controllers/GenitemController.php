@@ -54,7 +54,7 @@ class GenitemController extends Controller
         } else {
             // 先从缓存中读取已经手动分配的角色权限 重新生成item后再次导入
             $itemChildCache = Yii::$app->cache->get('auth_item_child_role');
-            // 保存数据到缓存
+            // 把数据表数据保存到缓存
             $this->saveToCache();
             // 删除item
             $this->deleteItem();
@@ -73,7 +73,7 @@ class GenitemController extends Controller
                 $this->parseControllerFile($controllerFile, $module);
             }
         }
-        // 从缓存数据中重新保存到child 表
+        // 从缓存数据中重新保存到child 表 (非新增部分)
         $this->saveItemChildFromCache($itemChildCache);
     }
 
@@ -117,7 +117,7 @@ class GenitemController extends Controller
     }
 
     /**
-     * 从缓存中读取并重新保存到item表
+     * 从缓存中读取并重新保存到item表 (非新增数据)
      * @throws \yii\db\Exception
      */
     protected function saveItemFromCache()
@@ -140,7 +140,7 @@ class GenitemController extends Controller
     }
 
     /**
-     * 导入之前分配的权限数据
+     * 导入之前分配的权限数据 (非新增数据)
      * @param $item_child array
      * @throws \yii\db\Exception
      */

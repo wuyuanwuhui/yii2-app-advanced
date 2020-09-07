@@ -59,7 +59,6 @@ class SysuserController extends Controller
      */
     public function actionIndex()
     {
-
         if ($this->searchClass === null) {
             $searchModel = new AssignmentSearch;
             $dataProvider = $searchModel->search(Yii::$app->getRequest()->getQueryParams(), $this->userClassName, $this->usernameField);
@@ -135,7 +134,7 @@ class SysuserController extends Controller
             }
         }
         Helper::invalidate();
-        Yii::$app->response->format = 'json';
+        Yii::$app->response->format = 'json'; // \yii\web\Response::FORMAT_JSON
         return array_merge($this->getItems($id), ['errors' => $error]);
     }
 
