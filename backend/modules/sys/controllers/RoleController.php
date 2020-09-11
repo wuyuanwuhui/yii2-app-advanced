@@ -90,7 +90,6 @@ class RoleController extends Controller
                 AuthItemChild::deleteAll(['parent' => $id]);
                 $authType = Item::TYPE_PERMISSION;
                 $menuids = $itemids = [];
-
                 foreach($postItems as $key => $val)
                 {
                     $clondeModel = new AuthItemChild;
@@ -229,12 +228,7 @@ class RoleController extends Controller
         }
     }
 
-    // ----------------------------------------------------------------------------------------------------------------
 
-    public function actionTest()
-    {
-        return $this->render('test');
-    }
 
 
 

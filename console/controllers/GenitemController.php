@@ -18,6 +18,8 @@ use yii\rbac\Item;
  * @hint 注意: 前端VUE定义的路由命名必须与自动生成的模块路由一致，详见数据库auth_item 表 path 字段
  *
  * @package console\controllers
+ *
+ * php yii genitem/run      执行路由生成权限
  */
 class GenitemController extends Controller
 {

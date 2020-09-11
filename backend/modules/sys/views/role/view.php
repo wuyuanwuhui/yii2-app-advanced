@@ -73,7 +73,7 @@ $this->registerJs(
                             </div><!-- end panel-default -->
                             <div class="form-group">
                                 <div class="col-lg-offset-1 col-lg-10">
-                                    <?=Html::submitButton('Submit' , [ 'class' => 'btn btn-primary']); ?>
+                                    <?=Html::submitButton('确定' , [ 'class' => 'btn btn-primary']); ?>
                                 </div>
                             </div>
 
