@@ -1,0 +1,3314 @@
+2021-06-10 14:26:14 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:26:14 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '60476'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623335174.6431
+    'REQUEST_TIME' => 1623335174
+]
+2021-06-10 14:27:45 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Request.php:284
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#3 {main}
+2021-06-10 14:27:45 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:27:45 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '62174'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/article/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623335265.1706
+    'REQUEST_TIME' => 1623335265
+]
+2021-06-10 14:27:56 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Request.php:284
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#3 {main}
+2021-06-10 14:27:56 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:27:56 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '62174'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/article'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623335276.3634
+    'REQUEST_TIME' => 1623335276
+]
+2021-06-10 14:28:09 [10.0.2.2][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property 'content' of non-object in /vagrant/www/feehi/api/models/Article.php:18
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/rest/Serializer.php(292): api\models\Article->toArray()
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/rest/Serializer.php(188): yii\rest\Serializer->serializeModels()
+#2 /vagrant/www/feehi/vendor/yiisoft/yii2/rest/Serializer.php(152): yii\rest\Serializer->serializeDataProvider()
+#3 /vagrant/www/feehi/vendor/yiisoft/yii2/rest/Controller.php(99): yii\rest\Serializer->serialize()
+#4 /vagrant/www/feehi/vendor/yiisoft/yii2/rest/Controller.php(77): api\controllers\ArticleController->serializeData()
+#5 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Controller.php(159): api\controllers\ArticleController->afterAction()
+#6 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Module.php(528): api\controllers\ArticleController->runAction()
+#7 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(103): yii\web\Application->runAction()
+#8 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#9 /vagrant/www/feehi/api/web/index.php(17): yii\web\Application->run()
+#10 {main}
+2021-06-10 14:28:09 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:28:08 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '62174'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/articles'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623335288.9286
+    'REQUEST_TIME' => 1623335288
+]
+2021-06-10 14:28:39 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: article/1 in /vagrant/www/feehi/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('1', Array)
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('article/1', Array)
+#2 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2021-06-10 14:28:39 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:28:39 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '62174'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/article/1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623335319.2327
+    'REQUEST_TIME' => 1623335319
+]
+2021-06-10 14:29:03 [10.0.2.2][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property 'content' of non-object in /vagrant/www/feehi/api/models/Article.php:18
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/rest/Serializer.php(292): api\models\Article->toArray()
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/rest/Serializer.php(188): yii\rest\Serializer->serializeModels()
+#2 /vagrant/www/feehi/vendor/yiisoft/yii2/rest/Serializer.php(152): yii\rest\Serializer->serializeDataProvider()
+#3 /vagrant/www/feehi/vendor/yiisoft/yii2/rest/Controller.php(99): yii\rest\Serializer->serialize()
+#4 /vagrant/www/feehi/vendor/yiisoft/yii2/rest/Controller.php(77): api\modules\v1\controllers\ArticleController->serializeData()
+#5 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Controller.php(159): api\modules\v1\controllers\ArticleController->afterAction()
+#6 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Module.php(528): api\modules\v1\controllers\ArticleController->runAction()
+#7 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(103): yii\web\Application->runAction()
+#8 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#9 /vagrant/www/feehi/api/web/index.php(17): yii\web\Application->run()
+#10 {main}
+2021-06-10 14:29:03 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:29:03 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '62174'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/articles'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623335343.0445
+    'REQUEST_TIME' => 1623335343
+]
+2021-06-10 14:30:17 [10.0.2.2][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property 'content' of non-object in /vagrant/www/feehi/api/models/Article.php:18
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/rest/Serializer.php(292): api\models\Article->toArray()
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/rest/Serializer.php(188): yii\rest\Serializer->serializeModels()
+#2 /vagrant/www/feehi/vendor/yiisoft/yii2/rest/Serializer.php(152): yii\rest\Serializer->serializeDataProvider()
+#3 /vagrant/www/feehi/vendor/yiisoft/yii2/rest/Controller.php(99): yii\rest\Serializer->serialize()
+#4 /vagrant/www/feehi/vendor/yiisoft/yii2/rest/Controller.php(77): api\modules\v1\controllers\ArticleController->serializeData()
+#5 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Controller.php(159): api\modules\v1\controllers\ArticleController->afterAction()
+#6 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Module.php(528): api\modules\v1\controllers\ArticleController->runAction()
+#7 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(103): yii\web\Application->runAction()
+#8 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#9 /vagrant/www/feehi/api/web/index.php(17): yii\web\Application->run()
+#10 {main}
+2021-06-10 14:30:17 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:30:17 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '57669'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/article'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623335417.325
+    'REQUEST_TIME' => 1623335417
+]
+2021-06-10 14:31:05 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:31:05 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '57669'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/article'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623335465.3008
+    'REQUEST_TIME' => 1623335465
+]
+2021-06-10 14:31:12 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:31:12 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '57669'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/articles'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623335471.9705
+    'REQUEST_TIME' => 1623335471
+]
+2021-06-10 14:32:00 [10.0.2.2][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property 'content' of non-object in /vagrant/www/feehi/api/models/Article.php:18
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/rest/Serializer.php(292): api\models\Article->toArray()
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/rest/Serializer.php(188): yii\rest\Serializer->serializeModels()
+#2 /vagrant/www/feehi/vendor/yiisoft/yii2/rest/Serializer.php(152): yii\rest\Serializer->serializeDataProvider()
+#3 /vagrant/www/feehi/vendor/yiisoft/yii2/rest/Controller.php(99): yii\rest\Serializer->serialize()
+#4 /vagrant/www/feehi/vendor/yiisoft/yii2/rest/Controller.php(77): api\modules\v1\controllers\ArticleController->serializeData()
+#5 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Controller.php(159): api\modules\v1\controllers\ArticleController->afterAction()
+#6 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Module.php(528): api\modules\v1\controllers\ArticleController->runAction()
+#7 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(103): yii\web\Application->runAction()
+#8 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#9 /vagrant/www/feehi/api/web/index.php(17): yii\web\Application->run()
+#10 {main}
+2021-06-10 14:32:00 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:32:00 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '57669'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/articles'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623335520.1595
+    'REQUEST_TIME' => 1623335520
+]
+2021-06-10 14:33:54 [10.0.2.2][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property 'content' of non-object in /vagrant/www/feehi/api/models/Article.php:18
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/rest/Serializer.php(292): api\models\Article->toArray()
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/rest/Serializer.php(188): yii\rest\Serializer->serializeModels()
+#2 /vagrant/www/feehi/vendor/yiisoft/yii2/rest/Serializer.php(152): yii\rest\Serializer->serializeDataProvider()
+#3 /vagrant/www/feehi/vendor/yiisoft/yii2/rest/Controller.php(99): yii\rest\Serializer->serialize()
+#4 /vagrant/www/feehi/vendor/yiisoft/yii2/rest/Controller.php(77): api\modules\v1\controllers\ArticleController->serializeData()
+#5 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Controller.php(159): api\modules\v1\controllers\ArticleController->afterAction()
+#6 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Module.php(528): api\modules\v1\controllers\ArticleController->runAction()
+#7 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(103): yii\web\Application->runAction()
+#8 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#9 /vagrant/www/feehi/api/web/index.php(17): yii\web\Application->run()
+#10 {main}
+2021-06-10 14:33:54 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:33:53 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '50466'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/articles'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623335633.6309
+    'REQUEST_TIME' => 1623335633
+]
+2021-06-10 14:34:40 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:34:40 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '50466'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/articles'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623335680.1337
+    'REQUEST_TIME' => 1623335680
+]
+2021-06-10 14:34:49 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:34:48 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '50466'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/articles'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623335688.7065
+    'REQUEST_TIME' => 1623335688
+]
+2021-06-10 14:35:27 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:35:27 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '50466'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/articles'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623335727.0695
+    'REQUEST_TIME' => 1623335727
+]
+2021-06-10 14:35:40 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:35:39 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '50466'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/articles'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623335739.8267
+    'REQUEST_TIME' => 1623335739
+]
+2021-06-10 14:39:18 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "v1/articles/abc". in /vagrant/www/feehi/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/articles/abc', Array)
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2021-06-10 14:39:18 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:39:17 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '53837'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/articles/abc'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623335957.867
+    'REQUEST_TIME' => 1623335957
+]
+2021-06-10 14:39:29 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/article/abc in /vagrant/www/feehi/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('abc', Array)
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/article/abc', Array)
+#2 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2021-06-10 14:39:29 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:39:29 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '53837'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/article/abc'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623335969.6942
+    'REQUEST_TIME' => 1623335969
+]
+2021-06-10 14:41:05 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Request.php:284
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#3 {main}
+2021-06-10 14:41:05 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:41:05 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '52128'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/article/match-list'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623336065.7169
+    'REQUEST_TIME' => 1623336065
+]
+2021-06-10 14:41:12 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/article/match_list in /vagrant/www/feehi/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('match_list', Array)
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/article/matc...', Array)
+#2 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2021-06-10 14:41:12 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:41:12 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '52128'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/article/match_list'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623336072.2787
+    'REQUEST_TIME' => 1623336072
+]
+2021-06-10 14:41:33 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Request.php:284
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#3 {main}
+2021-06-10 14:41:33 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:41:33 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '52128'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/article/match-list'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623336093.1304
+    'REQUEST_TIME' => 1623336093
+]
+2021-06-10 14:42:27 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:42:27 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '52128'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/article/match'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623336147.0692
+    'REQUEST_TIME' => 1623336147
+]
+2021-06-10 14:42:33 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/article/match in /vagrant/www/feehi/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('match', Array)
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/article/matc...', Array)
+#2 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2021-06-10 14:42:33 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:42:33 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '52128'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/article/match'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623336153.5482
+    'REQUEST_TIME' => 1623336153
+]
+2021-06-10 14:42:38 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Request.php:284
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#3 {main}
+2021-06-10 14:42:38 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:42:37 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '52128'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/article/match-list'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623336157.8098
+    'REQUEST_TIME' => 1623336157
+]
+2021-06-10 14:42:42 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/article/match_list in /vagrant/www/feehi/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('match_list', Array)
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/article/matc...', Array)
+#2 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2021-06-10 14:42:42 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:42:42 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '52128'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/article/match_list'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623336162.746
+    'REQUEST_TIME' => 1623336162
+]
+2021-06-10 14:47:44 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/article/match_list in /vagrant/www/feehi/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('match_list', Array)
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/article/matc...', Array)
+#2 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2021-06-10 14:47:44 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:47:43 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '52281'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/article/match_list'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623336463.8202
+    'REQUEST_TIME' => 1623336463
+]
+2021-06-10 14:50:35 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/article/match_list in /vagrant/www/feehi/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('match_list', Array)
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/article/matc...', Array)
+#2 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2021-06-10 14:50:35 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:50:35 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '65007'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/article/match_list'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623336635.5454
+    'REQUEST_TIME' => 1623336635
+]
+2021-06-10 14:51:04 [10.0.2.2][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in /vagrant/www/feehi/vendor/yiisoft/yii2/filters/auth/AuthMethod.php:93
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/filters/auth/AuthMethod.php(76): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/filters/auth/CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\base\InlineAction))
+#2 /vagrant/www/feehi/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/paid', Array)
+#10 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#12 {main}
+2021-06-10 14:51:04 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:51:04 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '65007'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/paid'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623336664.4167
+    'REQUEST_TIME' => 1623336664
+]
+2021-06-10 14:51:37 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:51:37 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '65007'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/paid'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623336697.182
+    'REQUEST_TIME' => 1623336697
+]
+2021-06-10 14:51:46 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:51:46 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '65007'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/paid'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623336706.7374
+    'REQUEST_TIME' => 1623336706
+]
+2021-06-10 14:51:52 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/paid/info in /vagrant/www/feehi/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('info', Array)
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/paid/info', Array)
+#2 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2021-06-10 14:51:52 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:51:52 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '65007'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/paid/info'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623336711.9832
+    'REQUEST_TIME' => 1623336711
+]
+2021-06-10 14:51:59 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Request.php:284
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#3 {main}
+2021-06-10 14:51:59 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:51:58 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '65007'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/paid/info-mo'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623336718.7783
+    'REQUEST_TIME' => 1623336718
+]
+2021-06-10 14:52:03 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/paid/info_mo in /vagrant/www/feehi/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('info_mo', Array)
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/paid/info_mo', Array)
+#2 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2021-06-10 14:52:03 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:52:03 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '65007'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/paid/info_mo'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623336723.6748
+    'REQUEST_TIME' => 1623336723
+]
+2021-06-10 14:52:07 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/paid/infomo in /vagrant/www/feehi/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('infomo', Array)
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/paid/infomo', Array)
+#2 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2021-06-10 14:52:07 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:52:07 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '65007'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/paid/infomo'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623336727.4676
+    'REQUEST_TIME' => 1623336727
+]
+2021-06-10 14:52:10 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Request.php:284
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#3 {main}
+2021-06-10 14:52:10 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:52:10 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '65007'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/paid/info-mo'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623336730.7656
+    'REQUEST_TIME' => 1623336730
+]
+2021-06-10 14:52:38 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/paid/infomo in /vagrant/www/feehi/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('infomo', Array)
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/paid/infomo', Array)
+#2 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2021-06-10 14:52:38 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:52:37 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '65007'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/paid/infomo'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623336757.8364
+    'REQUEST_TIME' => 1623336757
+]
+2021-06-10 14:52:44 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/paid/infoMo in /vagrant/www/feehi/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('infoMo', Array)
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/paid/infoMo', Array)
+#2 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2021-06-10 14:52:44 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:52:44 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '65007'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/paid/infoMo'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623336764.1423
+    'REQUEST_TIME' => 1623336764
+]
+2021-06-10 14:52:53 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/paid/infoMo in /vagrant/www/feehi/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('infoMo', Array)
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/paid/infoMo', Array)
+#2 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2021-06-10 14:52:53 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:52:53 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '65007'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/paid/infoMo'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623336773.1612
+    'REQUEST_TIME' => 1623336773
+]
+2021-06-10 14:52:56 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:52:56 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '65007'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/paid/info'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623336776.3664
+    'REQUEST_TIME' => 1623336776
+]
+2021-06-10 14:53:24 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/article/match_list in /vagrant/www/feehi/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('match_list', Array)
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/article/matc...', Array)
+#2 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2021-06-10 14:53:24 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 14:53:24 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '65007'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/article/match_list'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623336804.266
+    'REQUEST_TIME' => 1623336804
+]
+2021-06-10 15:03:11 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 15:03:11 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '65424'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/article/matchlist'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623337391.3719
+    'REQUEST_TIME' => 1623337391
+]
+2021-06-10 15:03:25 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: article/matchlist in /vagrant/www/feehi/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('matchlist', Array)
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('article/matchli...', Array)
+#2 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2021-06-10 15:03:25 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 15:03:25 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '65424'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/article/matchlist'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623337405.5692
+    'REQUEST_TIME' => 1623337405
+]
+2021-06-10 15:03:32 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 15:03:32 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '65424'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/article/matchlist'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623337412.0119
+    'REQUEST_TIME' => 1623337412
+]
+2021-06-10 15:05:15 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Request.php:284
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#3 {main}
+2021-06-10 15:05:15 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 15:05:15 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '57886'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/noactive/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623337515.3437
+    'REQUEST_TIME' => 1623337515
+]
+2021-06-10 15:05:18 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 15:05:18 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '57886'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/noactive'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623337518.5197
+    'REQUEST_TIME' => 1623337518
+]
+2021-06-10 15:05:21 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Request.php:284
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#3 {main}
+2021-06-10 15:05:21 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 15:05:21 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '57886'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/noactive/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623337521.7215
+    'REQUEST_TIME' => 1623337521
+]
+2021-06-10 15:05:28 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 15:05:27 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '57886'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/noactive'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623337527.8449
+    'REQUEST_TIME' => 1623337527
+]
+2021-06-10 15:09:04 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Request.php:284
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#3 {main}
+2021-06-10 15:09:04 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 15:09:04 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '55532'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/game/match-conf'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623337744.5115
+    'REQUEST_TIME' => 1623337744
+]
+2021-06-10 15:09:30 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 15:09:30 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '55532'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/game/match'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623337770.2583
+    'REQUEST_TIME' => 1623337770
+]
+2021-06-10 15:09:41 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/game/match in /vagrant/www/feehi/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('match', Array)
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/game/match', Array)
+#2 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2021-06-10 15:09:41 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 15:09:40 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '55532'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/game/match'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623337780.7334
+    'REQUEST_TIME' => 1623337780
+]
+2021-06-10 15:10:34 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Request.php:284
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#3 {main}
+2021-06-10 15:10:34 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 15:10:34 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '55532'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/game/match-conf'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623337834.4306
+    'REQUEST_TIME' => 1623337834
+]
+2021-06-10 15:10:55 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/game/match_conf in /vagrant/www/feehi/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('match_conf', Array)
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/game/match_c...', Array)
+#2 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2021-06-10 15:10:55 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 15:10:55 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '55532'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/game/match_conf'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623337854.9653
+    'REQUEST_TIME' => 1623337854
+]
+2021-06-10 15:11:05 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/game/matchconf in /vagrant/www/feehi/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('matchconf', Array)
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/game/matchco...', Array)
+#2 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2021-06-10 15:11:05 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 15:11:05 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '55532'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/game/matchconf'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623337865.2857
+    'REQUEST_TIME' => 1623337865
+]
+2021-06-10 15:11:35 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 15:11:35 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '55532'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/game/matchconf'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623337895.6263
+    'REQUEST_TIME' => 1623337895
+]
+2021-06-10 15:11:44 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 15:11:44 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '55532'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/game/match-conf'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623337904.0768
+    'REQUEST_TIME' => 1623337904
+]
+2021-06-10 15:11:49 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Request.php:284
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#3 {main}
+2021-06-10 15:11:49 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 15:11:49 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '55532'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/game/match-conf'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623337909.6988
+    'REQUEST_TIME' => 1623337909
+]
+2021-06-10 15:12:03 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Request.php:284
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#3 {main}
+2021-06-10 15:12:03 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 15:12:03 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '55532'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/game/match-conf'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623337923.7359
+    'REQUEST_TIME' => 1623337923
+]
+2021-06-10 15:12:05 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Request.php:284
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#3 {main}
+2021-06-10 15:12:05 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 15:12:05 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '55532'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/game/match-conf'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623337925.1446
+    'REQUEST_TIME' => 1623337925
+]
+2021-06-10 15:15:37 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Request.php:284
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#3 {main}
+2021-06-10 15:15:37 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 15:15:37 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '58768'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/game/match-conf'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623338137.4006
+    'REQUEST_TIME' => 1623338137
+]
+2021-06-10 15:15:41 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: v1/game/matchlist in /vagrant/www/feehi/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('matchlist', Array)
+#1 /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/game/matchli...', Array)
+#2 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /vagrant/www/feehi/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /vagrant/www/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /vagrant/www/feehi/api/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2021-06-10 15:15:41 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 15:15:40 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '58768'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/game/matchlist'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623338140.8739
+    'REQUEST_TIME' => 1623338140
+]
+2021-06-10 15:15:49 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 15:15:49 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '58768'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/game/matchconf'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623338149.0984
+    'REQUEST_TIME' => 1623338149
+]
+2021-06-10 15:16:19 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-06-10 15:16:19 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '7n97d4pdcqbnrj7u15krv7t4hu'
+    '_csrf' => '9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=7n97d4pdcqbnrj7u15krv7t4hu; _csrf=9d9e114885d23723ebf30626af9a82fd70161934f4e10676ff3ea67de25d5488a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22lRT83Xm_2xivMyS7Qr9hOUqRPTzcXaFa%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh-TW;q=0.9,zh;q=0.8,en-US;q=0.7,en;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.feehi_api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.feehi_api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '58768'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/v1/article/matchlist'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1623338179.6207
+    'REQUEST_TIME' => 1623338179
+]

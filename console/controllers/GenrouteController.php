@@ -1,6 +1,7 @@
 <?php
 /**
-
+ * 已经废弃
+ *
  * Created by PhpStorm.
  * User: chrispaul
  * Date: 2018/4/23
@@ -30,7 +31,7 @@ class GenrouteController extends Controller
     const PREFIX = '/';
 
     /**
-     * 获取应用所有路由
+     * 获取应用所有路由 <!------------------------ abandoned 废弃 ------------------------------>
      *
      * 注意：由于本controller是继承console 也就是 console App, 所以不会自动读到web模块路由，需要在main.php中手动配置模块
      *

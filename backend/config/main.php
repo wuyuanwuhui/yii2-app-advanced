@@ -21,7 +21,12 @@ return [
             //'layout' => '@app/views/layouts/main.php',
         ],
     ],
+
+    'homeUrl' => '/admin',
     'components' => [
+        'request' => [
+            'baseUrl' => '/admin',
+        ],
         'user' => [
             'identityClass' => 'common\models\AdminModel',
             'enableAutoLogin' => true,

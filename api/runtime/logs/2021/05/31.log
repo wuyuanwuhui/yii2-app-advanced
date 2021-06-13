@@ -1,0 +1,804 @@
+2021-05-31 07:34:55 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-05-31 07:34:55 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/web/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '51258'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/web/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622446495.6418
+    'REQUEST_TIME' => 1622446495
+]
+2021-05-31 07:34:56 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-05-31 07:34:56 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/web/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '51258'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/web/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622446496.0018
+    'REQUEST_TIME' => 1622446496
+]
+2021-05-31 07:35:06 [10.0.2.2][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "vue/site". in /vagrant/www/web/feehi/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /vagrant/www/web/feehi/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('vue/site', Array)
+#1 /vagrant/www/web/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /vagrant/www/web/feehi/api/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /vagrant/www/web/feehi/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /vagrant/www/web/feehi/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /vagrant/www/web/feehi/api/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2021-05-31 07:35:06 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-05-31 07:35:05 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/web/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '51258'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/web/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/vue/site'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622446505.794
+    'REQUEST_TIME' => 1622446505
+]
+2021-05-31 07:35:14 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-05-31 07:35:14 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/web/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '51258'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/web/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/vue'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622446514.19
+    'REQUEST_TIME' => 1622446514
+]
+2021-05-31 07:36:49 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-05-31 07:36:48 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/web/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '51282'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/web/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/vue'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622446608.9009
+    'REQUEST_TIME' => 1622446608
+]
+2021-05-31 07:36:51 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-05-31 07:36:51 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/web/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '51282'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/web/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/vue'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622446611.0525
+    'REQUEST_TIME' => 1622446611
+]
+2021-05-31 07:37:30 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-05-31 07:37:30 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/web/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '51282'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/web/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/vue'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622446650.0402
+    'REQUEST_TIME' => 1622446650
+]
+2021-05-31 07:37:35 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-05-31 07:37:35 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'local.api.com:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/web/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '51282'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/web/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/vue'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622446655.1952
+    'REQUEST_TIME' => 1622446655
+]
+2021-05-31 07:39:14 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-05-31 07:39:14 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'viad556i5uc4rh7a2an2lakeam'
+    '_csrf' => '3f4a29d4ff041a73ed2621f3d145d22db3e661df1557c980cbaa31cd17550ac6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1Yuy95F0o8VNvPkXQFXuEB8xL7Fo093b\";}'
+    'BACKEND_FEEHICMS' => 'h4g9jq3f6sp4unf0tjauhcq34e'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_HOST' => 'local.api.com:8080'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:8082/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=viad556i5uc4rh7a2an2lakeam; _csrf=3f4a29d4ff041a73ed2621f3d145d22db3e661df1557c980cbaa31cd17550ac6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221Yuy95F0o8VNvPkXQFXuEB8xL7Fo093b%22%3B%7D; BACKEND_FEEHICMS=h4g9jq3f6sp4unf0tjauhcq34e'
+    'SCRIPT_FILENAME' => '/vagrant/www/web/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '51376'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/web/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/vue'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622446754.3656
+    'REQUEST_TIME' => 1622446754
+]
+2021-05-31 07:43:42 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-05-31 07:43:41 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'BACKEND_FEEHICMS' => 'u3vakp15olh5v0ub4edshu66aq'
+    '_csrf_backend' => '74e2112657467627d380f3dc1cc34390d4f263ddebec55a20afec1f5308256caa:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"TE7T4CEJ1MIa63xflCn6EzF5OSdNKZNJ\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'BACKEND_FEEHICMS=u3vakp15olh5v0ub4edshu66aq; _csrf_backend=74e2112657467627d380f3dc1cc34390d4f263ddebec55a20afec1f5308256caa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22TE7T4CEJ1MIa63xflCn6EzF5OSdNKZNJ%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.31.80:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/web/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '65101'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/web/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622447021.8501
+    'REQUEST_TIME' => 1622447021
+]
+2021-05-31 07:43:47 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-05-31 07:43:47 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'BACKEND_FEEHICMS' => 'u3vakp15olh5v0ub4edshu66aq'
+    '_csrf_backend' => '74e2112657467627d380f3dc1cc34390d4f263ddebec55a20afec1f5308256caa:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"TE7T4CEJ1MIa63xflCn6EzF5OSdNKZNJ\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'BACKEND_FEEHICMS=u3vakp15olh5v0ub4edshu66aq; _csrf_backend=74e2112657467627d380f3dc1cc34390d4f263ddebec55a20afec1f5308256caa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22TE7T4CEJ1MIa63xflCn6EzF5OSdNKZNJ%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.31.80:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/web/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '65101'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/web/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622447027.5193
+    'REQUEST_TIME' => 1622447027
+]
+2021-05-31 07:46:50 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-05-31 07:46:49 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'BACKEND_FEEHICMS' => 'mmsr139bhj9td9em7uj6bmd51l'
+    '_csrf_backend' => '3e23550e1741a31e551f8cdd67d85c33f1561a5ef91a03f5fc16928b3a4aa842a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"KilcyV8tNAAgB9Fy0sMqvVbtFmAjjZWN\";}'
+    'PHPSESSID' => 'tn692id3t7vkehg82s9jg6ho41'
+    '_csrf' => 'b395a3a8d302cc514759f9dbec0ed7d1aac9bef150b1868ceab86bcc1e643fa3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eddzX7kHcoyGmqpYwD8csQ_opSVFwOvd\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'BACKEND_FEEHICMS=mmsr139bhj9td9em7uj6bmd51l; _csrf_backend=3e23550e1741a31e551f8cdd67d85c33f1561a5ef91a03f5fc16928b3a4aa842a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22KilcyV8tNAAgB9Fy0sMqvVbtFmAjjZWN%22%3B%7D; PHPSESSID=tn692id3t7vkehg82s9jg6ho41; _csrf=b395a3a8d302cc514759f9dbec0ed7d1aac9bef150b1868ceab86bcc1e643fa3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eddzX7kHcoyGmqpYwD8csQ_opSVFwOvd%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.31.80:8080/'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.31.80:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/web/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '55258'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/web/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/vue'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622447209.7635
+    'REQUEST_TIME' => 1622447209
+]
+2021-05-31 07:46:51 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-05-31 07:46:51 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'BACKEND_FEEHICMS' => 'mmsr139bhj9td9em7uj6bmd51l'
+    '_csrf_backend' => '3e23550e1741a31e551f8cdd67d85c33f1561a5ef91a03f5fc16928b3a4aa842a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"KilcyV8tNAAgB9Fy0sMqvVbtFmAjjZWN\";}'
+    'PHPSESSID' => 'tn692id3t7vkehg82s9jg6ho41'
+    '_csrf' => 'b395a3a8d302cc514759f9dbec0ed7d1aac9bef150b1868ceab86bcc1e643fa3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eddzX7kHcoyGmqpYwD8csQ_opSVFwOvd\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'BACKEND_FEEHICMS=mmsr139bhj9td9em7uj6bmd51l; _csrf_backend=3e23550e1741a31e551f8cdd67d85c33f1561a5ef91a03f5fc16928b3a4aa842a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22KilcyV8tNAAgB9Fy0sMqvVbtFmAjjZWN%22%3B%7D; PHPSESSID=tn692id3t7vkehg82s9jg6ho41; _csrf=b395a3a8d302cc514759f9dbec0ed7d1aac9bef150b1868ceab86bcc1e643fa3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eddzX7kHcoyGmqpYwD8csQ_opSVFwOvd%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.31.80:8080/'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.31.80:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/web/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '55256'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/web/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/vue'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622447211.6395
+    'REQUEST_TIME' => 1622447211
+]
+2021-05-31 07:47:04 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-05-31 07:47:04 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'BACKEND_FEEHICMS' => 'mmsr139bhj9td9em7uj6bmd51l'
+    '_csrf_backend' => '3e23550e1741a31e551f8cdd67d85c33f1561a5ef91a03f5fc16928b3a4aa842a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"KilcyV8tNAAgB9Fy0sMqvVbtFmAjjZWN\";}'
+    'PHPSESSID' => 'tn692id3t7vkehg82s9jg6ho41'
+    '_csrf' => 'b395a3a8d302cc514759f9dbec0ed7d1aac9bef150b1868ceab86bcc1e643fa3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eddzX7kHcoyGmqpYwD8csQ_opSVFwOvd\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'BACKEND_FEEHICMS=mmsr139bhj9td9em7uj6bmd51l; _csrf_backend=3e23550e1741a31e551f8cdd67d85c33f1561a5ef91a03f5fc16928b3a4aa842a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22KilcyV8tNAAgB9Fy0sMqvVbtFmAjjZWN%22%3B%7D; PHPSESSID=tn692id3t7vkehg82s9jg6ho41; _csrf=b395a3a8d302cc514759f9dbec0ed7d1aac9bef150b1868ceab86bcc1e643fa3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eddzX7kHcoyGmqpYwD8csQ_opSVFwOvd%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.31.80:8080/'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.31.80:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/web/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '55257'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/web/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/vue'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622447224.7029
+    'REQUEST_TIME' => 1622447224
+]
+2021-05-31 07:47:15 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-05-31 07:47:15 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'BACKEND_FEEHICMS' => 'mmsr139bhj9td9em7uj6bmd51l'
+    '_csrf_backend' => '3e23550e1741a31e551f8cdd67d85c33f1561a5ef91a03f5fc16928b3a4aa842a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"KilcyV8tNAAgB9Fy0sMqvVbtFmAjjZWN\";}'
+    'PHPSESSID' => 'tn692id3t7vkehg82s9jg6ho41'
+    '_csrf' => 'b395a3a8d302cc514759f9dbec0ed7d1aac9bef150b1868ceab86bcc1e643fa3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eddzX7kHcoyGmqpYwD8csQ_opSVFwOvd\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'BACKEND_FEEHICMS=mmsr139bhj9td9em7uj6bmd51l; _csrf_backend=3e23550e1741a31e551f8cdd67d85c33f1561a5ef91a03f5fc16928b3a4aa842a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22KilcyV8tNAAgB9Fy0sMqvVbtFmAjjZWN%22%3B%7D; PHPSESSID=tn692id3t7vkehg82s9jg6ho41; _csrf=b395a3a8d302cc514759f9dbec0ed7d1aac9bef150b1868ceab86bcc1e643fa3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eddzX7kHcoyGmqpYwD8csQ_opSVFwOvd%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.31.80:8080/'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.31.80:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/web/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '55258'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/web/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/vue'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622447235.5138
+    'REQUEST_TIME' => 1622447235
+]
+2021-05-31 07:47:29 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-05-31 07:47:29 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'BACKEND_FEEHICMS' => 'mmsr139bhj9td9em7uj6bmd51l'
+    '_csrf_backend' => '3e23550e1741a31e551f8cdd67d85c33f1561a5ef91a03f5fc16928b3a4aa842a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"KilcyV8tNAAgB9Fy0sMqvVbtFmAjjZWN\";}'
+    'PHPSESSID' => 'tn692id3t7vkehg82s9jg6ho41'
+    '_csrf' => 'b395a3a8d302cc514759f9dbec0ed7d1aac9bef150b1868ceab86bcc1e643fa3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eddzX7kHcoyGmqpYwD8csQ_opSVFwOvd\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'BACKEND_FEEHICMS=mmsr139bhj9td9em7uj6bmd51l; _csrf_backend=3e23550e1741a31e551f8cdd67d85c33f1561a5ef91a03f5fc16928b3a4aa842a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22KilcyV8tNAAgB9Fy0sMqvVbtFmAjjZWN%22%3B%7D; PHPSESSID=tn692id3t7vkehg82s9jg6ho41; _csrf=b395a3a8d302cc514759f9dbec0ed7d1aac9bef150b1868ceab86bcc1e643fa3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eddzX7kHcoyGmqpYwD8csQ_opSVFwOvd%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.31.80:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/web/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '55258'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/web/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/vue'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622447249.2479
+    'REQUEST_TIME' => 1622447249
+]
+2021-05-31 07:47:59 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2021-05-31 07:47:59 [10.0.2.2][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'v08m0q00gjm8iqj0cumqcnpee4'
+    '_csrf' => '4d8e32aea90da51e3f872d7849ae24310ff63d917228d7a563e1eaa0d5d93138a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"uOGm_r5IRyYasP6t50T8MtN5JmjWEzws\";}'
+]
+
+$_SERVER = [
+    'USER' => 'apache'
+    'HOME' => '/usr/share/httpd'
+    'HTTP_COOKIE' => 'PHPSESSID=v08m0q00gjm8iqj0cumqcnpee4; _csrf=4d8e32aea90da51e3f872d7849ae24310ff63d917228d7a563e1eaa0d5d93138a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22uOGm_r5IRyYasP6t50T8MtN5JmjWEzws%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://192.168.31.80:8080/'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; U; Android 9; zh-cn; MI 6X Build/PKQ1.180904.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.147 Mobile Safari/537.36 XiaoMi/MiuiBrowser/13.7.16'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.31.80:8080'
+    'SCRIPT_FILENAME' => '/vagrant/www/web/feehi/api/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'local.api.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '10.0.2.15'
+    'REMOTE_PORT' => '44612'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'SERVER_SOFTWARE' => 'nginx/1.20.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/vagrant/www/web/feehi/api/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/site/vue'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1622447279.1613
+    'REQUEST_TIME' => 1622447279
+]
